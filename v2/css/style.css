@@ -1,5 +1,15 @@
 body {
+    margin: 0;
+    padding: 0;
     background: #1c1f22;
+}
+
+header {
+    width: 100%;
+    margin: 50px 0;
+    position: fixed;
+    text-align: center;
+    transition: opacity .3s;
 }
 
 .menu {
@@ -9,31 +19,82 @@ body {
     text-align: center;
 }
 
-.menu .fadeout {
-    opacity: 0;
+.fadeout {
+    opacity: 0 !important;
 }
 
-.menu .hide {
-    visibility: hidden;
+.hide {
+    visibility: hidden !important;
 }
 
-.menu-switch{
+.menu-switch,
+.menu-switch:before,
+.menu-switch:after {
     opacity: 1;
-    top: 10px;
-    left: 10px;
-    width: 30px;
-    height: 30px;
-    z-index: 998;
+    content: '';
+    width: 40px;
+    height: 40px;
+    z-index: 997;
+    border-radius: 5px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    transition: opacity .3s, left .5s, top, .5s;
+}
+
+.menu-switch {
     position: fixed;
-    transition: opacity .3s;
+    background: #ddd;
+    transform: rotate(-8deg);
+}
+.menu-switch.start {
+    top: 350px;
+    right: calc(50% - 30px);
+}
+
+.menu-switch.done {
+    top: 10px;
+    right: 10px;
+}
+.menu-switch:before {
+    top: 0;
+    left: 0;
+    background: #ddd;
+    position: absolute;
+    transform: rotate(16deg);
+}
+
+.menu-switch:after {
+    top: 0;
+    left: 0;
+    background: #eee;
+    position: absolute;
+    transform: rotate(8deg);
+}
+
+.menu-switch button {
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border: none;
+    z-index: 998;
+    cursor: pointer;
+    display: inline;
+    overflow: hidden;
+    position: absolute;
+    transform: rotate(8deg);
+    font: bold 11px/125px Verdana;
+    text-transform: capitalize;
+    background: url("alphabet-sprite.png") -18px -2522px no-repeat;
 }
 
 .menu-list {
-    margin: 15px;
     padding: 0;
     opacity: 1;
-    transition: opacity .3s;
+    margin: 15px;
     z-index: 999;
+    position: fixed;
+    transition: opacity .3s;
 }
 
 .menu-list li,
@@ -75,18 +136,18 @@ body {
     width: 80px;
     height: 80px;
     border: none;
-    cursor: pointer;
-    position: absolute;
     z-index: 1000;
+    cursor: pointer;
     display: inline;
+    overflow: hidden;
+    position: absolute;
     transform: rotate(5deg);
-    background: url("alphabet-sprite.png") no-repeat;
     font: bold 11px/125px Verdana;
-    text-transform: capitalize;
+    background: url("alphabet-sprite.png") no-repeat;
 }
 
-.menu-list button:active,
-.menu-list button:focus {
+.menu button:active,
+.menu button:focus {
     outline: none;
 }
 
@@ -126,11 +187,11 @@ body {
     background-position: 0 -810px;
 }
 
-.kappa {
+.menu-list .kappa {
     background-position: 0 -910px;
 }
 
-.lambda {
+.menu-list .lambda {
     background-position: 0 -1010px;
 }
 

@@ -4,17 +4,27 @@
     var $menu = $('nav.menu'),
         $menuList = $('.menu-list', $menu),
         $menuSwitch = $('.menu-switch', $menu),
-        $close = $('button.close', $menuList);
+        $menuButton = $('button', $menuList),
+        $head = $('header'),
+        firstClickMenu = true;
 
-    $close.on('click', function () {
+    $menuButton.on('click', function () {
+        var command = $(this).text();
+        if (command.match(/^\d/)) {
+            console.log('process', command);
+        }
         $menuSwitch.removeClass('hide fadeout');
         $menuList.addClass('fadeout');
     });
 
     $menuSwitch.on('click', function () {
-        $menuList.removeClass('hide fadeout');
-        $menu.removeAttr('style');
-        $menuSwitch.addClass('fadeout');
+        if (firstClickMenu) {
+            $menuSwitch.removeClass('start').addClass('done');
+        } else {
+            $menuList.removeClass('hide fadeout');
+            $menu.removeAttr('style');
+            $menuSwitch.addClass('fadeout');
+        }
     });
 
     $menuList.on("transitionend", function () {
@@ -25,10 +35,23 @@
     });
 
     $menuSwitch.on("transitionend", function () {
-        if ($menuSwitch.hasClass('fadeout')) {
-            $menuSwitch.addClass('hide');
+        if (firstClickMenu) {
+            $menuList.removeClass('hide fadeout');
+            $menu.removeAttr('style');
+            $menuSwitch.addClass('fadeout');
+            $head.addClass('fadeout');
+            firstClickMenu = false;
+        } else {
+            if ($menuSwitch.hasClass('fadeout')) {
+                $menuSwitch.addClass('hide');
+            }
         }
     });
+    
+    $head.on("transitionend", function () {
+        $head.remove();
+    });
 
+    $('section').html('a<br>b<br>c<br>d');
 }(jQuery));
 
