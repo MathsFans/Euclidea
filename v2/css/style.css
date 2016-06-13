@@ -9,13 +9,14 @@ header {
     margin: 50px 0;
     position: fixed;
     text-align: center;
-    transition: opacity .3s;
+    top: calc(50% - 200px);
+    transition: opacity .5s;
 }
 
 .menu {
-    top: 0;
-    left: 0;
-    position: absolute;
+    top: 20px;
+    width: 100%;
+    position: fixed;
     text-align: center;
 }
 
@@ -46,8 +47,9 @@ header {
     background: #ddd;
     transform: rotate(-8deg);
 }
+
 .menu-switch.start {
-    top: 350px;
+    top: 50%;
     right: calc(50% - 30px);
 }
 
@@ -55,6 +57,7 @@ header {
     top: 10px;
     right: 10px;
 }
+
 .menu-switch:before {
     top: 0;
     left: 0;
@@ -91,9 +94,9 @@ header {
 .menu-list {
     padding: 0;
     opacity: 1;
-    margin: 15px;
+    margin: auto;
     z-index: 999;
-    position: fixed;
+    max-width: 850px;
     transition: opacity .3s;
 }
 
