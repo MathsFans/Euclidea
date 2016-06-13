@@ -24,8 +24,8 @@ body {
     width: 30px;
     height: 30px;
     z-index: 998;
+    position: fixed;
     transition: opacity .3s;
-    position: absolute;
 }
 
 .menu-list {
