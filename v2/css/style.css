@@ -51,7 +51,7 @@ body {
 }
 
 .menu-list li {
-    margin: 20px;
+    margin: 15px;
     background: #ddd;
     position: relative;
     transform: rotate(-5deg);
