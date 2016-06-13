@@ -13,14 +13,17 @@
 
     $menuSwitch.on('click', function () {
         $menuList.removeClass('hide fadeout');
+        $menu.removeAttr('style');
         $menuSwitch.addClass('fadeout');
     });
 
     $menuList.on("transitionend", function () {
         if ($menuList.hasClass('fadeout')) {
             $menuList.addClass('hide');
+            $menu.css('top', -1000);
         }
     });
+
     $menuSwitch.on("transitionend", function () {
         if ($menuSwitch.hasClass('fadeout')) {
             $menuSwitch.addClass('hide');
