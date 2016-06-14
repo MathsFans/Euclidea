@@ -6,7 +6,7 @@
         $menuSwitch = $('.menu-switch', $menu),
         $menuButton = $('button', $menuList),
         $head = $('header'),
-        firstClickMenu = true;
+        $foot = $('footer');
 
     $menuButton.on('click', function () {
         var command = $(this).text();
@@ -18,8 +18,8 @@
     });
 
     $menuSwitch.on('click', function () {
-        if (firstClickMenu) {
-            $menuSwitch.removeClass('start').addClass('done');
+        if (conf.splashing) {
+            $menuSwitch.addClass('done');
         } else {
             $menuList.removeClass('hide fadeout');
             $menu.removeAttr('style');
@@ -35,23 +35,27 @@
     });
 
     $menuSwitch.on("transitionend", function () {
-        if (firstClickMenu) {
+        if (conf.splashing) {
             $menuList.removeClass('hide fadeout');
             $menu.removeAttr('style');
-            $menuSwitch.addClass('fadeout');
+            $menuSwitch.removeClass('start').addClass('fadeout');
             $head.addClass('fadeout');
-            firstClickMenu = false;
+            $foot.addClass('fadeout');
+            conf.splashing=false;
         } else {
             if ($menuSwitch.hasClass('fadeout')) {
                 $menuSwitch.addClass('hide');
             }
         }
     });
-    
+
     $head.on("transitionend", function () {
-        $head.remove();
+        $head.hide().removeClass('fadeout');
     });
 
-    $('section').html('a<br>b<br>c<br>d');
+    $foot.on("transitionend", function () {
+        $foot.hide().removeClass('fadeout');
+    });
+
 }(jQuery));
 

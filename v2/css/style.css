@@ -6,10 +6,19 @@ body {
 
 header {
     width: 100%;
-    margin: 50px 0;
     position: fixed;
     text-align: center;
     top: calc(50% - 200px);
+    transition: opacity .5s;
+}
+
+footer {
+    color: white;
+    width: 400px;
+    position: fixed;
+    text-align: center;
+    bottom: 10px;
+    left: calc(50% - 200px);
     transition: opacity .5s;
 }
 
@@ -74,6 +83,15 @@ header {
     transform: rotate(8deg);
 }
 
+.menu-switch button,
+.menu-list button {
+    background: url("alphabet-sprite.png?v2") no-repeat;
+}
+
+.menu-switch.start button {
+    background-position: -17px -2552px;
+}
+
 .menu-switch button {
     top: 0;
     left: 0;
@@ -88,7 +106,7 @@ header {
     transform: rotate(8deg);
     font: bold 11px/125px Verdana;
     text-transform: capitalize;
-    background: url("alphabet-sprite.png") -18px -2522px no-repeat;
+    background-position: -18px -2504px;
 }
 
 .menu-list {
@@ -146,7 +164,6 @@ header {
     position: absolute;
     transform: rotate(5deg);
     font: bold 11px/125px Verdana;
-    background: url("alphabet-sprite.png") no-repeat;
 }
 
 .menu button:active,
@@ -155,103 +172,103 @@ header {
 }
 
 .menu-list .alpha {
-    background-position: 0 -10px;
+    background-position: -4px -10px;
 }
 
 .menu-list .beta {
-    background-position: 0 -110px;
+    background-position: -4px -110px;
 }
 
 .menu-list .gamma {
-    background-position: 0 -210px;
+    background-position: -4px -210px;
 }
 
 .menu-list .delta {
-    background-position: 0 -310px;
+    background-position: -4px -310px;
 }
 
 .menu-list .epsilon {
-    background-position: 0 -410px;
+    background-position: -4px -410px;
 }
 
 .menu-list .zeta {
-    background-position: 0 -510px;
+    background-position: -4px -510px;
 }
 
 .menu-list .eta {
-    background-position: 0 -610px;
+    background-position: -4px -610px;
 }
 
 .menu-list .theta {
-    background-position: 0 -710px;
+    background-position: -4px -710px;
 }
 
 .menu-list .iota {
-    background-position: 0 -810px;
+    background-position: -4px -810px;
 }
 
 .menu-list .kappa {
-    background-position: 0 -910px;
+    background-position: -4px -910px;
 }
 
 .menu-list .lambda {
-    background-position: 0 -1010px;
+    background-position: -4px -1010px;
 }
 
 .menu-list .mu {
-    background-position: 0 -1110px;
+    background-position: -4px -1110px;
 }
 
 .menu-list .nu {
-    background-position: 0 -1210px;
+    background-position: -4px -1210px;
 }
 
 .menu-list .xi {
-    background-position: 0 -1310px;
+    background-position: -4px -1310px;
 }
 
 .menu-list .omicron {
-    background-position: 0 -1410px;
+    background-position: -4px -1410px;
 }
 
 .menu-list .pi {
-    background-position: 0 -1510px;
+    background-position: -4px -1510px;
 }
 
 .menu-list .rho {
-    background-position: 0 -1610px;
+    background-position: -4px -1610px;
 }
 
 .menu-list .sigma {
-    background-position: 0 -1710px;
+    background-position: -4px -1710px;
 }
 
 .menu-list .tau {
-    background-position: 0 -1810px;
+    background-position: -4px -1810px;
 }
 
 .menu-list .upsilon {
-    background-position: 0 -1910px;
+    background-position: -4px -1910px;
 }
 
 .menu-list .phi {
-    background-position: 0 -2010px;
+    background-position: -4px -2010px;
 }
 
 .menu-list .chi {
-    background-position: 0 -2110px;
+    background-position: -4px -2110px;
 }
 
 .menu-list .psi {
-    background-position: 0 -2210px;
+    background-position: -4px -2210px;
 }
 
 .menu-list .omega {
-    background-position: 0 -2310px;
+    background-position: -4px -2310px;
 }
 
 .menu-list .close {
     color: #610000;
-    background-position: 0 -2410px;
+    background-position: -4px -2410px;
 }
 
