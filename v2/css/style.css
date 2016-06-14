@@ -272,3 +272,54 @@ footer {
     background-position: -4px -2410px;
 }
 
+.tool {
+    width: 44px;
+    height: 44px;
+    display: inline-block;
+    background: url(tool-sprite.png) no-repeat;
+}
+
+.tool.point {
+    background-position: 0 0;
+}
+
+.tool.line {
+    background-position: -44px 0;
+}
+
+.tool.circle {
+    background-position: -88px 0;
+}
+
+.tool.perpendicular-bisector {
+    background-position: -132px 0;
+}
+
+.tool.perpendicular {
+    background-position: -176px 0;
+}
+
+.tool.angle-bisector {
+    background-position: -220px 0;
+}
+
+.tool.parallel {
+    background-position: -264px 0;
+}
+
+.tool.compass {
+    background-position: -308px 0;
+}
+
+.tool.intersect {
+    background-position: -352px 0;
+}
+
+.tool.midpoint {
+    background-position: -396px 0;
+}
+
+.tool.next {
+    width: 10px;
+    background-position: -440px 0;
+}
