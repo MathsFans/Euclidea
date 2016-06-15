@@ -55,6 +55,7 @@
         } else {
             showPack(packName);
         }
+        window.scrollTo(0, 0);
     }
 
     /**
