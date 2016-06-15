@@ -203,16 +203,28 @@ section.loading {
 }
 
 .menu-list li {
-    margin: 15px;
+    margin: 20px;
     background: #ddd;
     position: relative;
     transform: rotate(-5deg);
+}
+
+@media screen and (max-width: 670px) {
+    .menu-list li {
+        margin: 15px;
+    }
 }
 
 @media screen and (max-width: 325px) {
     .menu-list li {
         margin-left: 10px;
         margin-right: 10px;
+    }
+}
+
+@media screen and (min-width: 730px) {
+    .menu-list li {
+        margin:25px;
     }
 }
 
