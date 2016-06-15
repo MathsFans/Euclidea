@@ -6,8 +6,7 @@
         $menuSwitch = $('.menu-switch', $menu),
         $menuButton = $('button', $menuList),
         $head = $('header'),
-        $foot = $('footer'),
-        mdParser = new Remarkable();
+        $foot = $('footer');
 
     /**
      * load pack md and parse to relative section
@@ -15,9 +14,10 @@
      */
     function loadPack(packName) {
         if (!conf.inRamPack[packName]) {
-            $.get('solved/' + packName + '.md', function (data) {
+            $.get(packName + '.md', function (data) {
+                console.log('got');
                 conf.inRamPack[packName] = true;
-                insertMardDown(packName, data);
+                insertContent(packName, data);
                 showPack(packName);
             });
         } else {
@@ -30,7 +30,7 @@
      * @param packName
      * @param data
      */
-    function insertMardDown(packName, data) {
+    function insertContent(packName, data) {
         $('section.md-container[data-md="' + packName + '"]').html(parseMardDown(data));
     }
 
@@ -40,7 +40,7 @@
      * @returns {*|HTMLElement}
      */
     function parseMardDown(data) {
-        var html = mdParser.render(data);
+        var html = conf.parse(data);
         //大量中间处理。。。。。。。。。
         return $(html);
     }

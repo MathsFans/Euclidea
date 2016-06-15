@@ -22,6 +22,21 @@ footer {
     transition: opacity .5s;
 }
 
+footer p {
+    font: 11px/20px verdana;
+    color: #999;
+    margin: 4px;
+}
+
+footer a,
+footer a:link,
+footer a:active,
+footer a:hover,
+footer a:visited,
+footer em {
+    color: #ccc;
+}
+
 .menu {
     top: 20px;
     width: 100%;
