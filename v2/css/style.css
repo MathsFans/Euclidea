@@ -37,6 +37,10 @@ footer em {
     color: #ccc;
 }
 
+section.loading{
+    color:#ccc;
+}
+
 .menu {
     top: 20px;
     width: 100%;

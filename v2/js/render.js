@@ -6,7 +6,8 @@
         $menuSwitch = $('.menu-switch', $menu),
         $menuButton = $('button', $menuList),
         $head = $('header'),
-        $foot = $('footer');
+        $foot = $('footer'),
+        $section = $('section.md-container');
 
     /**
      * load pack md and parse to relative section
@@ -31,18 +32,16 @@
      * @param data
      */
     function insertContent(packName, data) {
-        $('section.md-container[data-md="' + packName + '"]').html(parseMardDown(data));
+        $('section[data-md="' + packName + '"]').html(conf.parse(data));
     }
 
     /**
-     * parse markdown to html
-     * @param data
-     * @returns {*|HTMLElement}
+     * show pointed pack and hide all other
+     * @param packName
      */
-    function parseMardDown(data) {
-        var html = conf.parse(data);
-        //大量中间处理。。。。。。。。。
-        return $(html);
+    function showLoading(packName) {
+        $section.hide();
+        $('.loading', $section).show();
     }
 
     /**
@@ -50,10 +49,13 @@
      * @param packName
      */
     function showPack(packName) {
-        $('section.md-container').hide();
-        $('section.md-container[data-md="' + packName + '"]').show();
+        $section.hide();
+        $('section[data-md="' + packName + '"]').show();
     }
 
+    /**
+     * event handler
+     */
     function menuButtonClicked() {
         var command = $(this).text();
         if (command.match(/^\d/)) {
@@ -64,9 +66,11 @@
         }
         $menuSwitch.removeClass('hide fadeout');
         $menuList.addClass('fadeout');
-
     }
 
+    /**
+     * event handler
+     */
     function menuSwitchClicked() {
         if (conf.splashing) {
             $menuSwitch.addClass('done');
@@ -75,9 +79,11 @@
             $menu.removeAttr('style');
             $menuSwitch.addClass('fadeout');
         }
-
     }
 
+    /**
+     * event handler
+     */
     function menuListTransitionend() {
         if ($menuList.hasClass('fadeout')) {
             $menuList.addClass('hide');
@@ -85,8 +91,10 @@
         }
     }
 
+    /**
+     * event handler
+     */
     function menuSwitchTransitionend() {
-
         if (conf.splashing) {
             $menuList.removeClass('hide fadeout');
             $menu.removeAttr('style');
@@ -101,10 +109,16 @@
         }
     }
 
+    /**
+     * event handler
+     */
     function headTransitionend() {
         $head.hide().removeClass('fadeout');
     }
 
+    /**
+     * event handler
+     */
     function footTransitionend() {
         $foot.hide().removeClass('fadeout');
     }
