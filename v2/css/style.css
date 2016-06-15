@@ -132,7 +132,6 @@ section.loading {
 
 @media screen and (max-width: 800px) {
     .menu-switch.done {
-        top: 10px;
         right: 10px;
     }
 }
@@ -212,10 +211,15 @@ section.loading {
 
 @media screen and (max-width: 325px) {
     .menu-list li {
-        margin: 10px;
-        background: #ddd;
-        position: relative;
-        transform: rotate(-5deg);
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-height: 565px) {
+    .menu-list li {
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }
 
