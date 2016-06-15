@@ -389,3 +389,15 @@ section.loading {
     background-position: -440px 0;
 }
 
+.md-container div {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, .8);
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.md-container h5,
+.md-container ul {
+    margin: 0;
+}
