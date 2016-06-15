@@ -180,6 +180,8 @@ section.loading {
     margin: auto;
     z-index: 999;
     max-width: 600px;
+    background: rgba(0,0,0,.6);
+    border-radius: 10px;
     transition: opacity .3s;
 }
 
@@ -392,7 +394,7 @@ section.loading {
 .md-container div {
     border: 1px solid #ccc;
     border-radius: 6px;
-    background: rgba(255, 255, 255, .8);
+    background: rgba(255, 255, 255, .7);
     margin-top: 30px;
     padding: 10px;
 }
