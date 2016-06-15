@@ -13,7 +13,7 @@ body {
 }
 
 .aniBlock {
-    animation: rotate 180s linear;
+    animation: rotate 240s infinite linear;
     position: absolute;
     display: block;
     background: url(bglines.png) no-repeat;
@@ -25,7 +25,7 @@ body {
         transform: rotate(0deg);
     }
     100% {
-        transform: rotate(359deg);
+        transform: rotate(360deg);
     }
 }
 
@@ -33,7 +33,7 @@ header {
     width: 100%;
     position: fixed;
     text-align: center;
-    top: calc(50% - 200px);
+    top: 15%;
     transition: opacity .5s;
 }
 
@@ -63,6 +63,9 @@ footer em {
 }
 
 article {
+    padding: 0;
+    margin: auto;
+    max-width: 700px;
     z-index: 500;
 }
 
@@ -110,16 +113,16 @@ section.loading {
 }
 
 .menu-switch.start {
-    top: 50%;
-    right: calc(50% - 30px);
+    top: calc(50% - 22px);
+    right: calc(50% - 22px);
 }
 
 .menu-switch.done {
     top: 10px;
-    right: calc(50% - 300px);
+    right: calc(50% - 350px);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .menu-switch.done {
         top: 10px;
         right: 10px;
@@ -173,7 +176,7 @@ section.loading {
     opacity: 1;
     margin: auto;
     z-index: 999;
-    max-width: 600px;
+    max-width: 700px;
     transition: opacity .3s;
 }
 

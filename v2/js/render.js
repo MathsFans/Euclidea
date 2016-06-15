@@ -25,7 +25,7 @@
     function fixAniBlockSize() {
         var w = $aniContainer.width(),
             h = $aniContainer.height(),
-            s = w > h ? w : h;
+            s = (w > h ? w : h) * 1.3;
         $aniBlock.css({
             width: s,
             height: s,
