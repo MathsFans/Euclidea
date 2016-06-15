@@ -3,7 +3,8 @@
     var conf = window.conf = window.conf || {};
     $.extend(conf, {
         splashing: true,
-        currentPack: 0,
+        currentPack: '',
+        inRamPack: {},
         toolDict: {
             '点': 'point',
             '线': 'line',
@@ -30,5 +31,5 @@
             return retHtml;
         }
     });
-    
+
 }(jQuery));
