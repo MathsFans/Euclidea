@@ -4,6 +4,31 @@ body {
     background: #1c1f22;
 }
 
+.aniContainer {
+    z-index: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.aniBlock {
+    animation: rotate 180s linear;
+    position: absolute;
+    display: block;
+    background: url(bglines.png) no-repeat;
+    background-size: 100%;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(359deg);
+    }
+}
+
 header {
     width: 100%;
     position: fixed;
@@ -37,8 +62,8 @@ footer em {
     color: #ccc;
 }
 
-section.loading{
-    color:#ccc;
+article {
+    z-index: 500;
 }
 
 .menu {
@@ -56,6 +81,14 @@ section.loading{
     visibility: hidden !important;
 }
 
+.md-container {
+    display: none;
+}
+
+section.loading {
+    color: #ccc;
+}
+
 .menu-switch,
 .menu-switch:before,
 .menu-switch:after {
@@ -67,7 +100,7 @@ section.loading{
     border-radius: 5px;
     display: inline-block;
     border: 1px solid #ccc;
-    transition: opacity .3s, left .5s, top, .5s;
+    transition: opacity .3s, right .5s, top, .5s;
 }
 
 .menu-switch {
@@ -83,7 +116,14 @@ section.loading{
 
 .menu-switch.done {
     top: 10px;
-    right: 10px;
+    right: calc(50% - 300px);
+}
+
+@media screen and (max-width: 600px) {
+    .menu-switch.done {
+        top: 10px;
+        right: 10px;
+    }
 }
 
 .menu-switch:before {
@@ -133,7 +173,7 @@ section.loading{
     opacity: 1;
     margin: auto;
     z-index: 999;
-    max-width: 850px;
+    max-width: 600px;
     transition: opacity .3s;
 }
 
@@ -342,3 +382,4 @@ section.loading{
     width: 10px;
     background-position: -440px 0;
 }
+

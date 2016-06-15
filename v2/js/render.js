@@ -7,7 +7,32 @@
         $menuButton = $('button', $menuList),
         $head = $('header'),
         $foot = $('footer'),
-        $section = $('section.md-container');
+        $section = $('section.md-container'),
+        $aniContainer = $('.aniContainer'),
+        $aniBlock = $('.aniBlock');
+
+    /**
+     * initial page
+     */
+    (function initPage() {
+        fixAniBlockSize();
+    }());
+
+
+    /**
+     * fix the rotated schema size
+     */
+    function fixAniBlockSize() {
+        var w = $aniContainer.width(),
+            h = $aniContainer.height(),
+            s = w > h ? w : h;
+        $aniBlock.css({
+            width: s,
+            height: s,
+            top: h / 2 - s / 2,
+            left: w / 2 - s / 2
+        });
+    }
 
     /**
      * load pack md and parse to relative section
@@ -129,6 +154,7 @@
     $menuSwitch.on("transitionend", menuSwitchTransitionend);
     $head.on("transitionend", headTransitionend);
     $foot.on("transitionend", footTransitionend);
+    $(window).on('resize', fixAniBlockSize);
 
 }(jQuery));
 
