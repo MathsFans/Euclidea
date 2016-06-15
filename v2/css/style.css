@@ -64,7 +64,7 @@ footer em {
 }
 
 article {
-    padding: 40px 20px;
+    padding: 20px 20px;
     z-index: 500;
     margin: auto;
     max-width: 700px;
@@ -393,7 +393,7 @@ section.loading {
     border: 1px solid #ccc;
     border-radius: 6px;
     background: rgba(255, 255, 255, .8);
-    margin-bottom: 30px;
+    margin-top: 30px;
     padding: 10px;
 }
 
