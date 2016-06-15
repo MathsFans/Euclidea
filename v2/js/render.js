@@ -32,6 +32,12 @@
             top: h / 2 - s / 2,
             left: w / 2 - s / 2
         });
+        $menuList.removeAttr('style');
+        var h2 = $menuList.height();
+        $menuList.css({
+            'height': h,
+            'padding-top': (h - h2) / 2
+        });
     }
 
     /**

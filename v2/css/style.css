@@ -38,6 +38,12 @@ header {
     transition: opacity .5s;
 }
 
+@media screen and (max-width: 400px) {
+    header img {
+        width: 95%;
+    }
+}
+
 footer {
     color: white;
     width: 400px;
@@ -72,7 +78,6 @@ article {
 }
 
 .menu {
-    top: 20px;
     width: 100%;
     z-index: 800;
     position: fixed;
@@ -175,13 +180,13 @@ section.loading {
 }
 
 .menu-list {
-    padding: 0;
     opacity: 1;
     margin: auto;
     z-index: 999;
     max-width: 600px;
-    background: rgba(0,0,0,.6);
+    padding: 0;
     border-radius: 10px;
+    background: rgba(0, 0, 0, .6);
     transition: opacity .3s;
 }
 
@@ -204,6 +209,15 @@ section.loading {
     background: #ddd;
     position: relative;
     transform: rotate(-5deg);
+}
+
+@media screen and (max-width: 325px) {
+    .menu-list li {
+        margin: 10px;
+        background: #ddd;
+        position: relative;
+        transform: rotate(-5deg);
+    }
 }
 
 .menu-list li:before {
