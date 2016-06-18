@@ -17,9 +17,7 @@
  */
 (function () {
     "use strict";
-    //var conf = window.conf = window.conf || {};
-    var conf={};
-    conf.pack = {
+    var pack = {
         "1.Alpha": [
             {
                 name: "Angle60",
@@ -1379,5 +1377,5 @@
             }
         ]
     };
-    module.exports = conf;
+    module.exports = pack;
 }());

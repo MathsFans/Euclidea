@@ -81,7 +81,7 @@
              */
             function parseStep(line) {
                 if (line.match(/步骤[:：]([点线圆垂分角平行定交，, ]+)/)) {
-                    line = line.replace(/步骤[:：]([点线圆垂分角平行定交，, ]+)/g, '步骤：' + transferStep2Fig(RegExp.$1))
+                    line = line.replace(/步骤[:：]([点线圆垂分角平行定交，, ]+)/g, '步骤：' + transferStep2Fig(RegExp.$1));
                 }
                 return line;
             }
@@ -204,7 +204,7 @@
                 if (!divStart) {
                     divStart = true;
                     if (c.match(/^([\d\.]+)/)) {
-                        ext = ' data-levelid="' + RegExp.$1 + '"'
+                        ext = ' data-levelid="' + RegExp.$1 + '"';
                     }
                     html.push('<div' + ext + '>');
                 }

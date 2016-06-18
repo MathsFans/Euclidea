@@ -1,8 +1,8 @@
 var fs = require('fs'),
-    conf = require('./level');
+    packData = require('./level');
 
-for (var file in conf.pack) {
-    var pack = conf.pack[file];
+for (var packName in packData) {
+    var pack = packData[packName];
     var contents = [];
     for (var index in pack) {
         var level = pack[index],
@@ -40,7 +40,7 @@ for (var file in conf.pack) {
         }
         contents.push('\n');
     }
-    saveFileContent(file+'.md', contents.join('\n'));
+    saveFileContent(packName+'.md', contents.join('\n'));
 }
 
 
