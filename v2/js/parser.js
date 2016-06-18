@@ -1,5 +1,6 @@
 /**
- * parse
+ * mini markdown parse for Euclidea Solutions site
+ * compatible with MD basic syntax, but extended special syntax
  */
 
 (function ($) {
@@ -22,12 +23,13 @@
                     closeAllTag();
                 }
 
+                line = parseBrTag(line);
                 line = parseATag(line);
                 line = parseBTag(line);
                 line = parseITag(line);
                 line = parseStrongTag(line);
                 line = parseEmTag(line);
-                line = parseBrTag(line);
+                line = parseStep(line);
 
                 if (line.match(/^(#+)(.*)$/)) {
                     var number = RegExp.$1.length, content = RegExp.$2.trim();
@@ -38,6 +40,8 @@
                     (liStart) && closeLiTag();
                     startLiTag();
                     addContent(RegExp.$1);
+                } else if (line.match(/^\+(.*)[:：](.*)$/)) {
+                    addHideContent(RegExp.$1, RegExp.$2);
                 } else {
                     if (line && isAllTagClose()) {
                         startPTag();
@@ -72,9 +76,19 @@
             /**
              * @param {string} line
              */
+            function parseStep(line) {
+                if (line.match(/步骤[:：]([点线圆垂分角平行定交，, ]+)/)) {
+                    line = line.replace(/步骤[:：]([点线圆垂分角平行定交，, ]+)/g, '步骤：' + transferStep2Fig(RegExp.$1))
+                }
+                return line;
+            }
+
+            /**
+             * @param {string} line
+             */
             function parseATag(line) {
-                if (line.match(/\[([^\]]+)\]\(([^\)]+)\)/g)) {
-                    line = line.replace(/\[([^\]]+)\]\(([^\)]+)\)/g, '<a href="$2">$1</a>');
+                if (line.match(/\[([^\]]+)]\(([^\)]+)\)/g)) {
+                    line = line.replace(/\[([^\]]+)]\(([^\)]+)\)/g, '<a href="$2">$1</a>');
                 }
                 return line;
             }
@@ -134,6 +148,20 @@
              */
             function addContent(c) {
                 html.push(c);
+            }
+
+            /**
+             * @param t - title
+             * @param c - hideen content
+             */
+            function addHideContent(t, c) {
+                var h = ('00000' + (conf.indexHideId++)).slice(-5), br = '';
+                if (c.match(/^(.*)<br>$/)) {
+                    br = '<br>';
+                    c = RegExp.$1;
+                }
+                html.push('<span data-h="' + h + '">' + t + '</span>');
+                html.push('<samp data-h="' + h + '">' + c + '</samp>' + br);
             }
 
             /**
@@ -219,6 +247,32 @@
                 });
                 return lines.join('\n').replace(/\n\n+/g, '\n\n').split('\n');
             }
+
+            /**
+             * @param strStep
+             * @returns {string}
+             */
+            function transferStep2Fig(strStep) {
+                var arrStep, retHtml = '';
+                arrStep = strStep.replace(/[,，\s]+/g, ' ').split(' ').join(' Next ').split(' ');
+                $.each(arrStep, function (i, k) {
+                    retHtml += '<span class="tool ' + conf.toolDict[k] + '"></span>';
+                });
+                return retHtml;
+            }
+        },
+        indexHideId: 0,
+        toolDict: {
+            '点': 'point',
+            '线': 'line',
+            '圆': 'circle',
+            '垂分': 'perpendicular-bisector',
+            '垂线': 'perpendicular',
+            '角分': 'angle-bisector',
+            '平行': 'parallel',
+            '定圆': 'compass',
+            '交点': 'intersect',
+            'Next': 'next'
         }
     });
 }(jQuery));
