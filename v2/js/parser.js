@@ -41,6 +41,9 @@
                     startLiTag();
                     addContent(RegExp.$1);
                 } else if (line.match(/^\+(.*)[:：](.*)$/)) {
+                    (!ulStart) && startUlTag();
+                    (liStart) && closeLiTag();
+                    startLiTag();
                     addHideContent(RegExp.$1, RegExp.$2);
                 } else {
                     if (line && isAllTagClose()) {
