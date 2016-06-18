@@ -4,9 +4,9 @@ module.exports = function (grunt) {
         uglify: {
             build: {
                 expand: true,
-                cwd: 'chrome-tool',
-                src: ['*.js', '!*.min.js', '!jquery.js'],
-                dest: 'chrome-tool',
+                cwd: 'js',
+                src: ['*.js', '!*.min.js'],
+                dest: 'js',
                 ext: '.min.js'
             }
         },
@@ -14,9 +14,9 @@ module.exports = function (grunt) {
             target: {
                 files: [{
                     expand: true,
-                    cwd: 'chrome-tool',
+                    cwd: 'css',
                     src: ['*.css', '!*.min.css'],
-                    dest: 'chrome-tool',
+                    dest: 'css',
                     ext: '.min.css'
                 }]
             }
