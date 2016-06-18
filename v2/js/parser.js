@@ -40,7 +40,7 @@
                     (liStart) && closeLiTag();
                     startLiTag();
                     addContent(RegExp.$1);
-                } else if (line.match(/^\+(.*)[:：](.*)$/)) {
+                } else if (line.match(/^\+(.*)([:：].*)$/)) {
                     (!ulStart) && startUlTag();
                     (liStart) && closeLiTag();
                     startLiTag();
@@ -91,7 +91,7 @@
              */
             function parseATag(line) {
                 if (line.match(/\[([^\]]+)]\(([^\)]+)\)/g)) {
-                    line = line.replace(/\[([^\]]+)]\(([^\)]+)\)/g, '<a href="$2">$1</a>');
+                    line = line.replace(/\[([^\]]+)]\(([^\)]+)\)/g, '<button data-file="$2">$1</button>');
                 }
                 return line;
             }
@@ -120,8 +120,8 @@
              * @param {string} line
              */
             function parseITag(line) {
-                if (line.match(/_([^_]+)_/g)) {
-                    line = line.replace(/_([^_]+)_/g, '<i>$1</i>');
+                if (line.match(/_([^_<]+)_/g)) {
+                    line = line.replace(/_([^_<]+)_/g, '<i>$1</i>');
                 }
                 return line;
             }

@@ -5,7 +5,7 @@ module.exports = function (grunt) {
             build: {
                 expand: true,
                 cwd: 'js',
-                src: ['*.js', '!*.min.js'],
+                src: ['*.js', '!*.min.js', '!level.js', '!genBase.js'],
                 dest: 'js',
                 ext: '.min.js'
             }
