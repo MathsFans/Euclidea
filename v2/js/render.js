@@ -16,12 +16,11 @@
      */
     (function initPage() {
         fixAniBlockSize();
-        $('article').delegate('button[data-h]','click',function(){
+        $('article').delegate('button[data-h]', 'click', function () {
             $(this).hide();
-            $(`samp[data-h="${$(this).attr('data-h')}"]`).removeClass('hide');
+            $('samp[data-h="' + $(this).attr('data-h') + '"]').removeClass('hide');
         });
     }());
-
 
     /**
      * fix the rotated schema size
@@ -72,10 +71,9 @@
     }
 
     /**
-     * show pointed pack and hide all other
-     * @param packName
+     * show loading text
      */
-    function showLoading(packName) {
+    function showLoading() {
         $section.hide();
         $('.loading', $section).show();
     }
