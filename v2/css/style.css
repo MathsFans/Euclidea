@@ -4,6 +4,11 @@ body {
     background: #1c1f22;
 }
 
+body, h5, li, em, div, p, span {
+    color: #333;
+    font: 14px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 .aniContainer {
     z-index: 0;
     position: fixed;
@@ -52,11 +57,16 @@ footer {
     bottom: 10px;
     left: calc(50% - 200px);
     transition: opacity .5s;
+    z-index: 800;
+}
+
+footer p,
+footer em {
+    font: 11px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #999;
 }
 
 footer p {
-    font: 11px/20px verdana;
-    color: #999;
     margin: 4px;
 }
 
@@ -79,7 +89,7 @@ article {
 
 .menu {
     width: 100%;
-    z-index: 800;
+    z-index: 700;
     position: fixed;
     text-align: center;
 }
@@ -154,7 +164,7 @@ section.loading {
 
 .menu-switch button,
 .menu-list button {
-    background: url("alphabet-sprite.png?v2") no-repeat;
+    background: url("alphabets.png") no-repeat;
 }
 
 .menu-switch.start button {
@@ -173,7 +183,7 @@ section.loading {
     overflow: hidden;
     position: absolute;
     transform: rotate(8deg);
-    font: bold 11px/125px Verdana;
+    font: bold 11px/125px "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: capitalize;
     background-position: -18px -2504px;
 }
@@ -224,7 +234,7 @@ section.loading {
 
 @media screen and (min-width: 730px) {
     .menu-list li {
-        margin:25px;
+        margin: 25px;
     }
 }
 
@@ -259,7 +269,7 @@ section.loading {
     overflow: hidden;
     position: absolute;
     transform: rotate(5deg);
-    font: bold 11px/125px Verdana;
+    font: bold 11px/125px "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .menu button:active,
@@ -369,10 +379,10 @@ section.loading {
 }
 
 .tool {
-    width: 44px;
-    height: 44px;
+    width: 30px;
+    height: 30px;
     display: inline-block;
-    background: url(tool-sprite.png) no-repeat;
+    background: url(tools.png) no-repeat;
 }
 
 .tool.point {
@@ -380,44 +390,44 @@ section.loading {
 }
 
 .tool.line {
-    background-position: -44px 0;
+    background-position: -30px 0;
 }
 
 .tool.circle {
-    background-position: -88px 0;
+    background-position: -60px 0;
 }
 
 .tool.perpendicular-bisector {
-    background-position: -132px 0;
+    background-position: -90px 0;
 }
 
 .tool.perpendicular {
-    background-position: -176px 0;
+    background-position: -120px 0;
 }
 
 .tool.angle-bisector {
-    background-position: -220px 0;
+    background-position: -150px 0;
 }
 
 .tool.parallel {
-    background-position: -264px 0;
+    background-position: -180px 0;
 }
 
 .tool.compass {
-    background-position: -308px 0;
+    background-position: -210px 0;
 }
 
 .tool.intersect {
-    background-position: -352px 0;
+    background-position: -240px 0;
 }
 
 .tool.midpoint {
-    background-position: -396px 0;
+    background-position: -270px 0;
 }
 
 .tool.next {
-    width: 10px;
-    background-position: -440px 0;
+    width: 14px;
+    background-position: -300px 0;
 }
 
 .md-container div {
