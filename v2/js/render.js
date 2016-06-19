@@ -16,6 +16,10 @@
      */
     (function initPage() {
         fixAniBlockSize();
+        $('article').delegate('button[data-h]','click',function(){
+            $(this).hide();
+            $(`samp[data-h="${$(this).attr('data-h')}"]`).removeClass('hide');
+        });
     }());
 
 
@@ -46,8 +50,8 @@
      */
     function loadPack(packName) {
         if (!conf.inRamPack[packName]) {
+            showLoading();
             $.get(packName + '.md', function (data) {
-                console.log('got');
                 conf.inRamPack[packName] = true;
                 insertContent(packName, data);
                 showPack(packName);
@@ -157,10 +161,10 @@
 
     $menuButton.on('click', menuButtonClicked);
     $menuSwitch.on('click', menuSwitchClicked);
-    $menuList.on("transitionend", menuListTransitionend);
-    $menuSwitch.on("transitionend", menuSwitchTransitionend);
-    $head.on("transitionend", headTransitionend);
-    $foot.on("transitionend", footTransitionend);
+    $menuList.on('transitionend', menuListTransitionend);
+    $menuSwitch.on('transitionend', menuSwitchTransitionend);
+    $head.on('transitionend', headTransitionend);
+    $foot.on('transitionend', footTransitionend);
     $(window).on('resize', fixAniBlockSize);
 
 }(jQuery));

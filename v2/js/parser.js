@@ -40,7 +40,7 @@
                     (liStart) && closeLiTag();
                     startLiTag();
                     addContent(RegExp.$1);
-                } else if (line.match(/^\+(.*)([:：].*)$/)) {
+                } else if (line.match(/^\+(.*[:：])(.*)$/)) {
                     (!ulStart) && startUlTag();
                     (liStart) && closeLiTag();
                     startLiTag();
@@ -163,8 +163,9 @@
                     br = '<br>';
                     c = RegExp.$1;
                 }
-                html.push('<span data-h="' + h + '">' + t + '</span>');
-                html.push('<samp data-h="' + h + '">' + c + '</samp>' + br);
+                html.push('<span>' + t + '</span>');
+                html.push('<button data-h="' + h + '">点击显示</button>');
+                html.push('<samp data-h="' + h + '" class="hide">' + c + '</samp>' + br);
             }
 
             /**
@@ -204,7 +205,7 @@
                 if (!divStart) {
                     divStart = true;
                     if (c.match(/^([\d\.]+)/)) {
-                        ext = ' data-levelid="' + RegExp.$1 + '"';
+                        ext = ' class="level" data-levelid="' + RegExp.$1 + '"';
                     }
                     html.push('<div' + ext + '>');
                 }
