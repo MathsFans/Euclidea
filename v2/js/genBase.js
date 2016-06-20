@@ -8,7 +8,7 @@ for (var packName in packData) {
         var level = pack[index],
             stars = level.stars,
             line = '';
-        contents.push(`##### ${level.id} ${level.title} 目标: *${stars[0]}L ${stars[1]}E ${stars[2]}V*`);
+        contents.push(`##### ${level.id} ${level.title} *目标：${stars[0]}L ${stars[1]}E ${stars[2]}V*`);
         line += `- [查看题目](images/level/${level.image}.png) `;
         if (level.fact) {
             if (level.fact[1]) {

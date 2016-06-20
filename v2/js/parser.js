@@ -24,6 +24,7 @@
                 }
 
                 line = parseBrTag(line);
+                line = parseButtonTag(line);
                 line = parseATag(line);
                 line = parseBTag(line);
                 line = parseITag(line);
@@ -89,9 +90,19 @@
             /**
              * @param {string} line
              */
+            function parseButtonTag(line) {
+                if (line.match(/\[([^\]]+)]\(([^\)]+\.png)\)/g)) {
+                    line = line.replace(/\[([^\]]+)]\(([^\)]+\.png)\)/g, '<button data-img="$2">$1</button>');
+                }
+                return line;
+            }
+
+            /**
+             * @param {string} line
+             */
             function parseATag(line) {
                 if (line.match(/\[([^\]]+)]\(([^\)]+)\)/g)) {
-                    line = line.replace(/\[([^\]]+)]\(([^\)]+)\)/g, '<button data-file="$2">$1</button>');
+                    line = line.replace(/\[([^\]]+)]\(([^\)]+)\)/g, '<a href="$2">$1</a>');
                 }
                 return line;
             }

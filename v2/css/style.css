@@ -9,6 +9,10 @@ body, h5, li, em, div, p, span {
     font: 14px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+button {
+    cursor: pointer;
+}
+
 .aniContainer {
     z-index: 0;
     position: fixed;
@@ -178,7 +182,6 @@ section.loading {
     height: 40px;
     border: none;
     z-index: 998;
-    cursor: pointer;
     display: inline;
     overflow: hidden;
     position: absolute;
@@ -450,7 +453,7 @@ div.level ul {
 
 div.level li {
     display: block;
-    margin:5px 0;
+    margin: 5px 0;
 }
 
 article button {
@@ -473,4 +476,46 @@ article figure {
 
 article .vm {
     vertical-align: middle;
+}
+
+figure.figure {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 900;
+    display: none;
+}
+
+.level em {
+    color: #330;
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 2px;
+}
+
+.level h5 em {
+    text-shadow: 0 0 1px rgba(200, 200, 0, .7);
+}
+
+figure.show-figure {
+    display: table;
+}
+
+figure.show-figure div {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+figure img {
+    background: rgba(255, 255, 255, .8);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px #666;
 }
