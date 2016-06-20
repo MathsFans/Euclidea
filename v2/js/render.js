@@ -18,7 +18,7 @@
         fixAniBlockSize();
         $('article').delegate('button[data-h]', 'click', function () {
             $(this).hide();
-            $('samp[data-h="' + $(this).attr('data-h') + '"]').removeClass('hide');
+            $('figure[data-h="' + $(this).attr('data-h') + '"]').removeClass('hide');
         });
     }());
 

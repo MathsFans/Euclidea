@@ -163,9 +163,9 @@
                     br = '<br>';
                     c = RegExp.$1;
                 }
-                html.push('<span>' + t + '</span>');
-                html.push('<button data-h="' + h + '">点击显示</button>');
-                html.push('<samp data-h="' + h + '" class="hide">' + c + '</samp>' + br);
+                html.push('<span class="vm">' + t + '</span>');
+                html.push('<button class="vm" data-h="' + h + '">点击显示</button>');
+                html.push('<figure class="vm hide" data-h="' + h + '">' + c + '</figure>' + br);
             }
 
             /**
