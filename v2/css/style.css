@@ -475,7 +475,7 @@ article button {
 article figure {
     display: inline-block;
     margin: 0;
-    height: 30px;
+    line-height: 10px;
 }
 
 article .vm {
