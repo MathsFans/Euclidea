@@ -515,6 +515,7 @@ figure.show-figure div {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
+    background: rgba(0,0,0,.6);
 }
 
 figure img {
