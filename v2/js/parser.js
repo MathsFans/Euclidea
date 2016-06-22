@@ -176,7 +176,7 @@
                 }
                 html.push('<span class="vm">' + t + '</span>');
                 html.push('<button class="vm" data-h="' + h + '">点击显示</button>');
-                html.push('<figure class="vm hide" data-h="' + h + '">' + c + '</figure>' + br);
+                html.push('<figure class="vm nodisp" data-h="' + h + '">' + c + '</figure>' + br);
             }
 
             /**

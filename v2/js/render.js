@@ -164,7 +164,7 @@
 
     function hideStepButtonClicked() {
         $(this).hide();
-        $('figure[data-h="' + $(this).attr('data-h') + '"]').removeClass('hide');
+        $('figure[data-h="' + $(this).attr('data-h') + '"]').removeClass('nodisp');
     }
 
     $menuButton.on('click', menuButtonClicked);

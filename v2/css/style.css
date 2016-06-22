@@ -106,6 +106,10 @@ article {
     visibility: hidden !important;
 }
 
+.nodisp {
+    display: none;
+}
+
 .md-container {
     display: none;
 }
