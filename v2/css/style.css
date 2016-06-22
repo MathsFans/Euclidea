@@ -436,9 +436,9 @@ section.loading {
 .md-container div.level {
     padding: 10px;
     margin-top: 30px;
-    border-radius: 6px;
+    border: 1px #000 dashed;
     background: rgba(255, 255, 255, .7);
-    box-shadow: 1px 1px 4px #333 inset;
+    outline: 5px solid rgba(255, 255, 255, .7);
 }
 
 div.level h5 {
