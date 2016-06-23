@@ -79,6 +79,7 @@ footer p {
         width: 320px;
         left: calc(50% - 160px);
     }
+
     footer p,
     footer em {
         font: 10px/16px "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -539,6 +540,19 @@ figure img {
     box-shadow: 1px 1px 4px #666;
     position: relative;
     left: 9px;
+    max-width: 90%;
+}
+
+@media screen and (max-width: 420px) {
+    figure img {
+        max-width: 88%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    figure img {
+        max-width: 85%;
+    }
 }
 
 figure .close {
