@@ -8,7 +8,11 @@ for (var packName in packData) {
         var level = pack[index],
             stars = level.stars,
             line = '';
-        contents.push(`##### ${level.id} ${level.title} *目标：${stars[0]}L ${stars[1]}E ${stars[2]}V*`);
+        if (stars[2]>1){
+            contents.push(`##### ${level.id} ${level.title} *目标：${stars[0]}L ${stars[1]}E ${stars[2]}V*`);
+        } else {
+            contents.push(`##### ${level.id} ${level.title} *目标：${stars[0]}L ${stars[1]}E*`);
+        }
         line += `- [查看题目](images/level/${level.image}.png) `;
         if (level.fact) {
             if (level.fact[1]) {
@@ -37,7 +41,11 @@ for (var packName in packData) {
             contents.push(`+ *${stars[1]}E*步骤：${level.eseq}`);
             contents.push(`- 【待编辑】*${stars[1]}E*解题思路：xxx。[参考图](images/solved/${level.id}.${stars[1]}E.png)`);
         }
-        contents.push('\n');
+
+        if (stars[2]>1) {
+            contents.push(`- 【待编辑】*${stars[2]}V*解题思路：xxx。[参考图](images/solved/${level.id}.${stars[2]}V.png)`);
+        }
+            contents.push('\n');
     }
     saveFileContent(packName+'.md', contents.join('\n'));
 }
