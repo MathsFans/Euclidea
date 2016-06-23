@@ -170,15 +170,6 @@ section.loading {
     transform: rotate(8deg);
 }
 
-.menu-switch button,
-.menu-list button {
-    background: url("alphabets.png") no-repeat;
-}
-
-.menu-switch.start button {
-    background-position: -17px -2552px;
-}
-
 .menu-switch button {
     top: 0;
     left: 0;
@@ -192,7 +183,6 @@ section.loading {
     transform: rotate(8deg);
     font: bold 11px/125px "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: capitalize;
-    background-position: -18px -2504px;
 }
 
 .menu-list {
@@ -284,157 +274,170 @@ section.loading {
     outline: none;
 }
 
+.menu-switch button,
+.menu-list button,
+.tool {
+    background: url("sprites.png") no-repeat;
+}
+
 .menu-list .alpha {
-    background-position: -4px -10px;
+    background-position: -9px -10px;
 }
 
 .menu-list .beta {
-    background-position: -4px -110px;
+    background-position: -9px -110px;
 }
 
 .menu-list .gamma {
-    background-position: -4px -210px;
+    background-position: -9px -210px;
 }
 
 .menu-list .delta {
-    background-position: -4px -310px;
+    background-position: -109px -10px;
 }
 
 .menu-list .epsilon {
-    background-position: -4px -410px;
+    background-position: -109px -110px;
 }
 
 .menu-list .zeta {
-    background-position: -4px -510px;
+    background-position: -109px -210px;
 }
 
 .menu-list .eta {
-    background-position: -4px -610px;
+    background-position: -209px -10px;
 }
 
 .menu-list .theta {
-    background-position: -4px -710px;
+    background-position: -209px -110px;
 }
 
 .menu-list .iota {
-    background-position: -4px -810px;
+    background-position: -209px -210px;
 }
 
 .menu-list .kappa {
-    background-position: -4px -910px;
+    background-position: -309px -10px;
 }
 
 .menu-list .lambda {
-    background-position: -4px -1010px;
+    background-position: -309px -110px;
 }
 
 .menu-list .mu {
-    background-position: -4px -1110px;
+    background-position: -309px -210px;
 }
 
 .menu-list .nu {
-    background-position: -4px -1210px;
+    background-position: -409px -10px;
 }
 
 .menu-list .xi {
-    background-position: -4px -1310px;
+    background-position: -409px -110px;
 }
 
 .menu-list .omicron {
-    background-position: -4px -1410px;
+    background-position: -409px -210px;
 }
 
 .menu-list .pi {
-    background-position: -4px -1510px;
+    background-position: -509px -10px;
 }
 
 .menu-list .rho {
-    background-position: -4px -1610px;
+    background-position: -509px -110px;
 }
 
 .menu-list .sigma {
-    background-position: -4px -1710px;
+    background-position: -509px -210px;
 }
 
 .menu-list .tau {
-    background-position: -4px -1810px;
+    background-position: -609px -10px;
 }
 
 .menu-list .upsilon {
-    background-position: -4px -1910px;
+    background-position: -609px -110px;
 }
 
 .menu-list .phi {
-    background-position: -4px -2010px;
+    background-position: -609px -210px;
 }
 
 .menu-list .chi {
-    background-position: -4px -2110px;
+    background-position: -709px -10px;
 }
 
 .menu-list .psi {
-    background-position: -4px -2210px;
+    background-position: -709px -110px;
 }
 
 .menu-list .omega {
-    background-position: -4px -2310px;
+    background-position: -709px -210px;
 }
 
 .menu-list .close {
     color: #610000;
-    background-position: -4px -2410px;
+    background-position: -809px -10px;
+}
+
+.menu-switch button {
+    background-position: -803px -104px;
+}
+
+.menu-switch.start button {
+    background-position: -852px -103px;
 }
 
 .tool {
     width: 30px;
     height: 30px;
     display: inline-block;
-    background: url(tools.png) no-repeat;
 }
 
 .tool.point {
-    background-position: 0 0;
+    background-position: 0 -300px;
 }
 
 .tool.line {
-    background-position: -30px 0;
+    background-position: -30px -300px;
 }
 
 .tool.circle {
-    background-position: -60px 0;
+    background-position: -60px -300px;
 }
 
 .tool.perpendicular-bisector {
-    background-position: -90px 0;
+    background-position: -90px -300px
 }
 
 .tool.perpendicular {
-    background-position: -120px 0;
+    background-position: -120px -300px
 }
 
 .tool.angle-bisector {
-    background-position: -150px 0;
+    background-position: -150px -300px
 }
 
 .tool.parallel {
-    background-position: -180px 0;
+    background-position: -180px -300px
 }
 
 .tool.compass {
-    background-position: -210px 0;
+    background-position: -210px -300px
 }
 
 .tool.intersect {
-    background-position: -240px 0;
+    background-position: -240px -300px
 }
 
 .tool.midpoint {
-    background-position: -270px 0;
+    background-position: -270px -300px
 }
 
 .tool.next {
     width: 14px;
-    background-position: -300px 0;
+    background-position: -300px -300px
 }
 
 .md-container div.level {
@@ -515,7 +518,7 @@ figure.show-figure div {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
-    background: rgba(0,0,0,.6);
+    background: rgba(0, 0, 0, .6);
 }
 
 figure img {
@@ -523,4 +526,26 @@ figure img {
     padding: 10px;
     border-radius: 10px;
     box-shadow: 1px 1px 4px #666;
+    position: relative;
+    left: 9px;
+}
+
+figure .close {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    border-radius: 20px;
+    top: -8px;
+    cursor: pointer;
+    left: -8px;
+    color: #ccc;
+    font-size: 20px;
+    text-indent: 1px;
+    line-height: 16px;
+    background: #333;
+    transform: rotate(45deg);
+    border: 2px solid #ddd;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }

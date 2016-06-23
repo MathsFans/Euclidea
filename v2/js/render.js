@@ -154,7 +154,7 @@
 
     function showImageButtonClicked() {
         var img = $(this).attr('data-img');
-        $figure.addClass('show-figure').html('<div><img src="' + img + '"></div>');
+        $figure.addClass('show-figure').html('<div><img src="' + img + '"><span class="close">+</span></div>');
 
     }
 
