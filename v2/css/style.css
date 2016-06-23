@@ -74,6 +74,17 @@ footer p {
     margin: 4px;
 }
 
+@media screen and (max-width: 350px) {
+    footer {
+        width: 320px;
+        left: calc(50% - 160px);
+    }
+    footer p,
+    footer em {
+        font: 10px/16px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+}
+
 footer a,
 footer a:link,
 footer a:active,
