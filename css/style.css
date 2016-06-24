@@ -557,6 +557,7 @@ figure.figure img {
 
 figure.vm {
     font: 14px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: justify;
 }
 
 figure.vm.step-container {
