@@ -13,7 +13,7 @@
          * @returns {*|HTMLElement}
          */
         parse: function (mdData) {
-            var html = [], divStart = false, ulStart = false, liStart = false, pStart = false,
+            var html = [], divStart = false, ulStart = false, liStart = false, pStart = false, figureStart = false,
                 lines = cleanSplit(mdData);
 
             $.each(lines, function (i) {
@@ -24,6 +24,7 @@
                 }
 
                 line = parseBrTag(line);
+                line = parseImgTag(line);
                 line = parseButtonTag(line);
                 line = parseATag(line);
                 line = parseBTag(line);
@@ -37,11 +38,13 @@
                     startDivTag(content);
                     addHTag(number, content);
                 } else if (line.match(/^-(.*)$/)) {
+                    (figureStart) && closeFigureTag()
                     (!ulStart) && startUlTag();
                     (liStart) && closeLiTag();
                     startLiTag();
                     addContent(RegExp.$1);
                 } else if (line.match(/^\+(.*[:：])(.*)$/)) {
+                    (figureStart) && closeFigureTag()
                     (!ulStart) && startUlTag();
                     (liStart) && closeLiTag();
                     startLiTag();
@@ -63,6 +66,7 @@
             //=================
 
             function closeAllTag() {
+                closeFigureTag();
                 closeLiTag();
                 closeUlTag();
                 closePTag();
@@ -83,6 +87,16 @@
             function parseStep(line) {
                 if (line.match(/步骤[:：]([点线圆垂分角平行定交，, ]+)/)) {
                     line = line.replace(/步骤[:：]([点线圆垂分角平行定交，, ]+)/g, '步骤：' + transferStep2Fig(RegExp.$1));
+                }
+                return line;
+            }
+
+            /**
+             * @param {string} line
+             */
+            function parseImgTag(line) {
+                if (line.match(/!\[([^\]]+)]\(([^\)]+\.png)\)/g)) {
+                    line = line.replace(/!\[([^\]]+)]\(([^\)]+\.png)\)/g, '<img src="$2">$1</imgbutton>');
                 }
                 return line;
             }
@@ -169,14 +183,12 @@
              * @param c - hideen content
              */
             function addHideContent(t, c) {
-                var h = ('00000' + (conf.indexHideId++)).slice(-5), br = '';
-                if (c.match(/^(.*)<br>$/)) {
-                    br = '<br>';
-                    c = RegExp.$1;
-                }
+                var h = ('00000' + (conf.indexHideId++)).slice(-5),
+                    extClass = (t.match(/步骤/)) ? 'step-container' : '';
                 html.push('<span class="vm">' + t + '</span>');
                 html.push('<button class="vm" data-h="' + h + '">点击显示</button>');
-                html.push('<figure class="vm nodisp" data-h="' + h + '">' + c + '</figure>' + br);
+
+                html.push('<figure class="vm ' + extClass + ' nodisp" data-h="' + h + '">' + c);
             }
 
             /**
@@ -198,6 +210,13 @@
                 if (!ulStart) {
                     ulStart = true;
                     html.push('<ul>\n');
+                }
+            }
+
+            function startFigureTag() {
+                if (!figureStart) {
+                    figureStart = true;
+                    html.push('<figure>\n');
                 }
             }
 
@@ -233,6 +252,13 @@
                 if (ulStart) {
                     ulStart = false;
                     html.push('</ul>\n');
+                }
+            }
+
+            function closeFigureTag() {
+                if (figureStart) {
+                    figureStart = false;
+                    html.push('</figure>\n');
                 }
             }
 

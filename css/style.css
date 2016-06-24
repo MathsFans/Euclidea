@@ -533,7 +533,7 @@ figure.show-figure div {
     background: rgba(0, 0, 0, .6);
 }
 
-figure img {
+figure.figure img {
     background: rgba(255, 255, 255, .8);
     padding: 10px;
     border-radius: 10px;
@@ -544,15 +544,34 @@ figure img {
 }
 
 @media screen and (max-width: 420px) {
-    figure img {
+    figure.figure img {
         max-width: 88%;
     }
 }
 
 @media screen and (max-width: 320px) {
-    figure img {
+    figure.fighre img {
         max-width: 85%;
     }
+}
+
+figure.vm {
+    font: 14px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+figure.vm.step-container {
+    line-height: 10px;
+}
+
+figure.vm img {
+    border-radius: 10px;
+    max-width: 90%;
+    display: block;
+    margin: 15px 0 10px;
+}
+
+figure.vm img:first-child {
+    margin-top: 0;
 }
 
 figure .close {
