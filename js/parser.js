@@ -96,7 +96,7 @@
              */
             function parseImgTag(line) {
                 if (line.match(/!\[([^\]]+)]\(([^\)]+\.png)\)/g)) {
-                    line = line.replace(/!\[([^\]]+)]\(([^\)]+\.png)\)/g, '<img src="$2">$1</imgbutton>');
+                    line = line.replace(/!\[([^\]]+)]\(([^\)]+\.png)\)/g, '<img src="$2" alt="$1">');
                 }
                 return line;
             }
