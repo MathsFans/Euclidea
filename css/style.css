@@ -212,8 +212,8 @@ section.loading {
 .menu-list li:after {
     top: 0;
     left: 0;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     content: '';
     border-radius: 5px;
     border: 1px solid #ccc;
@@ -269,8 +269,8 @@ section.loading {
 .menu-list button {
     top: 0;
     left: 0;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border: none;
     z-index: 1000;
     cursor: pointer;
@@ -278,7 +278,7 @@ section.loading {
     overflow: hidden;
     position: absolute;
     transform: rotate(5deg);
-    font: bold 11px/125px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: bold 10px/92px "Helvetica Neue", Helvetica, Arial, sans-serif
 }
 
 .menu button:active,
@@ -293,104 +293,104 @@ section.loading {
 }
 
 .menu-list .alpha {
-    background-position: -9px -10px;
+    background-position: -19px -20px;
 }
 
 .menu-list .beta {
-    background-position: -9px -110px;
+    background-position: -19px -120px;
 }
 
 .menu-list .gamma {
-    background-position: -9px -210px;
+    background-position: -19px -220px;
 }
 
 .menu-list .delta {
-    background-position: -109px -10px;
+    background-position: -119px -20px;
 }
 
 .menu-list .epsilon {
-    background-position: -109px -110px;
+    background-position: -119px -120px;
 }
 
 .menu-list .zeta {
-    background-position: -109px -210px;
+    background-position: -119px -220px;
 }
 
 .menu-list .eta {
-    background-position: -209px -10px;
+    background-position: -219px -20px;
 }
 
 .menu-list .theta {
-    background-position: -209px -110px;
+    background-position: -219px -120px;
 }
 
 .menu-list .iota {
-    background-position: -209px -210px;
+    background-position: -219px -220px;
 }
 
 .menu-list .kappa {
-    background-position: -309px -10px;
+    background-position: -319px -20px;
 }
 
 .menu-list .lambda {
-    background-position: -309px -110px;
+    background-position: -319px -120px;
 }
 
 .menu-list .mu {
-    background-position: -309px -210px;
+    background-position: -319px -220px;
 }
 
 .menu-list .nu {
-    background-position: -409px -10px;
+    background-position: -419px -20px;
 }
 
 .menu-list .xi {
-    background-position: -409px -110px;
+    background-position: -419px -120px;
 }
 
 .menu-list .omicron {
-    background-position: -409px -210px;
+    background-position: -419px -220px;
 }
 
 .menu-list .pi {
-    background-position: -509px -10px;
+    background-position: -519px -20px;
 }
 
 .menu-list .rho {
-    background-position: -509px -110px;
+    background-position: -519px -120px;
 }
 
 .menu-list .sigma {
-    background-position: -509px -210px;
+    background-position: -519px -220px;
 }
 
 .menu-list .tau {
-    background-position: -609px -10px;
+    background-position: -619px -20px;
 }
 
 .menu-list .upsilon {
-    background-position: -609px -110px;
+    background-position: -619px -120px;
 }
 
 .menu-list .phi {
-    background-position: -609px -210px;
+    background-position: -619px -220px;
 }
 
 .menu-list .chi {
-    background-position: -709px -10px;
+    background-position: -719px -20px;
 }
 
 .menu-list .psi {
-    background-position: -709px -110px;
+    background-position: -719px -120px;
 }
 
 .menu-list .omega {
-    background-position: -709px -210px;
+    background-position: -719px -220px;
 }
 
 .menu-list .close {
     color: #610000;
-    background-position: -809px -10px;
+    background-position: -819px -20px;
 }
 
 .menu-switch button {
@@ -535,7 +535,6 @@ figure.show-figure div {
 
 figure.figure img {
     background: rgba(255, 255, 255, .8);
-    padding: 10px;
     border-radius: 10px;
     box-shadow: 1px 1px 4px #666;
     position: relative;
