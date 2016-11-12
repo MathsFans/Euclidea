@@ -31,7 +31,7 @@ for (var packName in packData) {
         contents.push(line);
         if (level.seq) {
             contents.push(`+ *${stars[0]}L${stars[1]}E*步骤：${level.seq}`);
-            contents.push(`- 【待编辑】*${stars[0]}L${stars[1]}E*解题思路：xxx。[参考图](solved/${level.id}.${stars[0]}L${stars[1]}E.png)`);
+            contents.push(`- 【待编辑】*${stars[0]}L${stars[1]}E*解题思路：xxx。[参考图](solved/${level.id}.${stars[0]}L${stars[1]}E.png)`) [GIF](solved/${level.id}.${stars[0]}L${stars[1]}E.gif)`);
         }
         if (level.lseq) {
             contents.push(`+ *${stars[0]}L*步骤：${level.lseq}`);
