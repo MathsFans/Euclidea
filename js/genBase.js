@@ -35,15 +35,15 @@ for (var packName in packData) {
         }
         if (level.lseq) {
             contents.push(`+ *${stars[0]}L*步骤：${level.lseq}`);
-            contents.push(`- 【待编辑】*${stars[0]}L*解题思路：xxx。[参考图](solved/${level.id}.${stars[0]}L.png)`);
+            contents.push(`- 【待编辑】*${stars[0]}L*解题思路：xxx。[参考图](solved/${level.id}.${stars[0]}L.png)`) [GIF](solved/${level.id}.${stars[0]}L.gif)`);
         }
         if (level.eseq) {
             contents.push(`+ *${stars[1]}E*步骤：${level.eseq}`);
-            contents.push(`- 【待编辑】*${stars[1]}E*解题思路：xxx。[参考图](solved/${level.id}.${stars[1]}E.png)`);
+            contents.push(`- 【待编辑】*${stars[1]}E*解题思路：xxx。[参考图](solved/${level.id}.${stars[1]}E.png)`) [GIF](solved/${level.id}.${stars[1]}E.gif)`);
         }
 
         if (stars[2]>1) {
-            contents.push(`- 【待编辑】*${stars[2]}V*解题思路：xxx。[参考图](solved/${level.id}.${stars[2]}V.png)`);
+            contents.push(`- 【待编辑】*${stars[2]}V*解题思路：xxx。[参考图](solved/${level.id}.${stars[2]}V.png)`) [GIF](solved/${level.id}.${stars[2]}V.gif)`);
         }
             contents.push('\n');
     }
