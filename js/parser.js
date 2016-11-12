@@ -95,8 +95,8 @@
              * @param {string} line
              */
             function parseImgTag(line) {
-                if (line.match(/!\[([^\]]+)]\(([^\)]+\.png)\)/g)) {
-                    line = line.replace(/!\[([^\]]+)]\(([^\)]+\.png)\)/g, '<img src="$2" alt="$1">');
+                if (line.match(/!\[([^\]]+)]\(([^\)]+\.(png|gif))\)/g)) {
+                    line = line.replace(/!\[([^\]]+)]\(([^\)]+\.(png|gif))\)/g, '<img src="$2" alt="$1">');
                 }
                 return line;
             }
@@ -105,8 +105,8 @@
              * @param {string} line
              */
             function parseButtonTag(line) {
-                if (line.match(/\[([^\]]+)]\(([^\)]+\.png)\)/g)) {
-                    line = line.replace(/\[([^\]]+)]\(([^\)]+\.png)\)/g, '<button data-img="$2">$1</button>');
+                if (line.match(/\[([^\]]+)]\(([^\)]+\.(png|gif))\)/g)) {
+                    line = line.replace(/\[([^\]]+)]\(([^\)]+\.(png|gif))\)/g, '<button data-img="$2">$1</button>');
                 }
                 return line;
             }
