@@ -2,9 +2,11 @@
 
 本Repo页面维护团队：  
 - [@Tairraos](https://github.com/tairraos)  
-- [@gsdevcn](https://github.com/negiizhao)  
-- [@negiizhao](https://github.com/negiizhao)  
-  
-本Repo Q群：527621502，欢迎通过github提交issue，也欢迎加群讨论，共同进步。  
-请访问网页版: http://g-fans.github.io/Euclidea
+- [@gsdevcn](https://github.com/gsdevcn)  
+- [@negiizhao](https://github.com/negiizhao) 
 
+本Repo Q群：527621502，欢迎通过github提交issue，也欢迎加群讨论，共同进步。  
+
+请访问网页版:
+- [美化版本链接(解答更新中)](https://mathsfans.github.io/Euclidea/)  
+- [v1版本链接(全最优解更新完成)](https://mathsfans.github.io/Euclidea/v1/)  
