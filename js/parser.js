@@ -125,8 +125,9 @@
              * @param {string} line
              */
             function parseEmTag(line) {
-                if (line.match(/\*([^\*]+)\*/g)) {
-                    line = line.replace(/\*([^\*]+)\*/g, '<em>$1</em>');
+                if (line.match(/([^\\])\*([^\*]+)\*/g)) {
+                    line = line.replace(/([^\\])\*([^\*]+)\*/g, '$1<em>$2</em>');
+                    line = line.replace(/\\\*/g, '*');
                 }
                 return line;
             }
