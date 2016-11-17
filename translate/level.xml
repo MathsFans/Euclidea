@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<levels>
+    <level id="T1_Line"
+           title="教程：直线工具"
+           description="以给定顶点作一个三角形。要作一条线段或直线，选择直线工具，先点击一点，再点击另一点；或者用手指在两点之间拖动。"
+           quote="理想化的尺，称为直尺，是假定长度无限，没有刻度而且只有一条边。"
+           quote_author="维基百科">
+    </level>
+    <level id="T2_Circle"
+           title="教程：圆工具"
+           description="以O为圆心，过点P作一个圆。选择圆工具，依次点击圆心和圆周上任意一点。也可以用手指从圆心拖动到圆周上的点。"
+           quote="圆只能由给定的两点作出：圆心及圆周上一点。不作圆时的圆规是闭合的。"
+           quote_author="维基百科">
+    </level>
+    <level id="T3_Point"
+           title="教程：点工具"
+           description="作出所有的交点。选择点工具，点击画板任意一处，即可新建一个点。手指点击时，距离最近的交点或直线将会被选中。"
+           quote="欧几里德原本一开始将点定义为“不能分割的东西”。"
+           quote_author="维基百科">
+    </level>
+    <level id="TPerpBisector"
+           title="教程：垂直平分线"
+           description="您已解锁了垂直平分线工具。依次点击两点查看这个工具的功能。或者用手指在两点之间拖动。"
+           quote="注意使用垂直平分线工具将耗费3个基础（E）步骤。"
+           quote_author="游戏说明">
+    </level>
+    <level id="TBisectAngle"
+           title="教程：角平分线"
+           description="您已解锁了角平分线工具。依次点击边上的任意一点、顶点和另一边上的任意一点。或者用手指沿着两条边拖动。"
+           quote="注意使用角平分线工具将耗费4个基础（E）步骤。"
+           quote_author="游戏说明">
+    </level>
+    <level id="TDropPerp"
+           title="教程：垂线"
+           description="您已解锁了垂线工具。依次点击直线和点。或者用手指从直线拖动到点。"
+           quote="注意使用垂线工具将耗费3个基础（E）步骤。"
+           quote_author="游戏说明">
+    </level>
+    <level id="TParallel"
+           title="教程：平行线"
+           description="您已解锁了平行线工具。依次点击直线和点。或者用手指从直线拖动到点。"
+           quote="注意使用平行线工具将耗费4个基础（E）步骤。"
+           quote_author="游戏说明">
+    </level>
+    <level id="TCircleByRadius"
+           title="教程：圆规"
+           description="您已解锁了圆规工具。依次点击两个点设定半径长度，再点击圆心完成圆的绘制。"
+           quote="注意使用圆规工具将耗费5个基础（E）步骤。"
+           quote_author="游戏说明">
+    </level>
+    <level id="TIntersect"
+           title="教程：相交工具"
+           description="如果线与线之间距离太近，难以一下选定所需的交点，可以使用相交工具。 依次选择一个对象（圆或直线），再选择第二个对象。 作为练习，请作出给定圆的交点。"
+           quote="每一个交点都有一段故事。"
+           quote_author="凯瑟琳·邓恩（美国小说家）">
+    </level>
+    <level id="TMove"
+           title="教程：移动工具"
+           description="帕斯卡定理指出，如果一个六边形内接于一个圆，则其三条对边的交点共线。使用移动工具了解这个定理的原理：拖动蓝色的点并观察。"
+           quote="我们的自然是由运动组成的。彻底的静止就是死亡。"
+           quote_author="布莱士·帕斯卡（法国哲学家、数学家，概率论奠基人）">
+    </level>
+    <level id="Angle60"
+           title="60° 角"
+           description="以给定射线为一边，作一个 60° 角。"
+           quote="不懂几何者，请勿入此门。"
+           quote_author="柏拉图（古希腊哲学家、数学家）">
+    </level>
+    <level id="PerpBisector"
+           title="垂直平分线"
+           description="作给定线段的垂直平分线。"
+           quote="所谓教育，就是一个人忘掉在学校所学之后保留下来的东西。"
+           quote_author="阿尔伯特·爱因斯坦（德国物理学家）">
+    </level>
+    <level id="Midpoint"
+           title="中点"
+           description="作给定两点的中点。"
+           quote="没有了几何，生活“一点”意思都没有了。（双关）"
+           quote_author="俚语">
+    </level>
+    <level id="CircleInSquare"
+           title="正方形的内切圆"
+           description="在给定正方形中作一个内切圆。"
+           quote="圆的榫头和方的卯眼是没办法契合的。"
+           quote_author="美国谚语">
+    </level>
+    <level id="RhombusInRect"
+           title="矩形的内接菱形"
+           description="在矩形中作一个内接菱形，使它们有一条公共对角线。"
+           quote="没有数学，艺术将不复存在。"
+           quote_author="卢卡·帕乔利（意大利数学家，现代会计之父）">
+    </level>
+    <level id="CircleCenter"
+           title="圆心"
+           description="作给定圆的圆心。"
+           quote="自然就像个无穷大的球体，明明到处都是中心，边界却无处可寻。"
+           quote_author="布莱士·帕斯卡（法国哲学家、数学家，概率论奠基人）">
+    </level>
+    <level id="SquareInCircle"
+           title="内接正方形"
+           description="以给定点为顶点，在圆中作一个内接正方形。"
+           quote="哪里有物质，哪里就有几何。"
+           quote_author="约翰尼斯·开普勒（德国天文学家）">
+    </level>
+    <level id="BisectAngle"
+           title="角平分线"
+           description="作一条直线，平分给定角。"
+           quote="几何学的基石——直线与圆的描述，是经典力学的一部分。几何学并非会教我们怎样画线，而是制定怎样画线的规则。"
+           quote_author="艾萨克·牛顿（英国物理学家、数学家）">
+    </level>
+    <level id="RhombusInTriangle"
+           title="三角形的内接菱形"
+           description="在三角形中作一个内接菱形，使它们有一个公共角A。"
+           quote="推动数学发现前进的动力并非来自理性，而是来自想象力的发挥。"
+           quote_author="奥古斯都·德·摩根（英国数学家、逻辑学家）">
+    </level>
+    <level id="Angle30"
+           title="30°角"
+           description="以给定射线为一边，作一个30°角。"
+           quote="几何与诗歌一样需要的是灵感。"
+           quote_author="亚历山大·普希金（俄国诗人、散文家、剧作家）">
+    </level>
+    <level id="DoubleAngle"
+           title="二倍角"
+           description="作一个与已知角相等的角，使它们有一条公共边。"
+           quote="矛盾不是假象的标志，但不矛盾也未必就是真相的化身。"
+           quote_author="布莱士·帕斯卡（法国哲学家、数学家，概率论奠基人）">
+    </level>
+    <level id="CutRectangle"
+           title="分割矩形"
+           description="过给定点作一条直线，将矩形分割成面积相等的两部分。"
+           quote="三思而后行。"
+           quote_author="谚语">
+    </level>
+    <level id="DropPerp"
+           title="过线外一点作垂线"
+           description="由给定点向直线引一条垂线。"
+           quote="几何学所追求的知识才是不朽的知识。"
+           quote_author="柏拉图（古希腊哲学家、数学家）">
+    </level>
+    <level id="ErectPerp"
+           title="过线上一点作垂线"
+           description="过直线上的一个点作该直线的垂线。"
+           quote="我们知道的东西是有限的，我们不知道的东西则是无穷的。"
+           quote_author="皮埃尔-西蒙·拉普拉斯（法国数学家、天文学家）">
+    </level>
+    <level id="Tangent1"
+           title="与圆切于某点的直线"
+           description="作一条切线，使其在给定点与圆相切。"
+           quote="假若一个人心神散乱，最好让他学习数学。"
+           quote_author="弗朗西斯·培根（英国哲学家）">
+    </level>
+    <level id="CircleTangentL"
+           title="与直线相切的圆"
+           description="以给定圆心作圆，使其与给定直线相切。"
+           quote="数学上的智力是思想的试金石。"
+           quote_author="瓦西里·苏霍姆林斯基（俄国教育家）">
+    </level>
+    <level id="CircleInRhombus"
+           title="菱形的内切圆"
+           description="在菱形中作一个内切圆。"
+           quote="数学家的风格，就如同画家和诗人的风格一样必须是美的；思想就像颜料或词藻，必须以和谐的方式相融合。"
+           quote_author="高德菲·哈代（英国数学家）">
+    </level>
+    <level id="ChordMidpoint"
+           title="弦中点"
+           description="作一条以给定点为中点的弦。"
+           quote="数学的研究，如同尼罗河，起源于微末，终止于宏大。"
+           quote_author="查尔斯·科尔顿（英国作家）">
+    </level>
+    <level id="ATrByOrthocenter"
+           title="由角和垂心定义的三角形"
+           description="作一条线段，使其连接已知角的两边，从而获得一个垂心为点O的三角形。"
+           quote="所谓数学家就是一部化咖啡为定理的机器。"
+           quote_author="阿尔弗雷德·瑞尼（匈牙利数学家）">
+    </level>
+    <level id="ATrByCircumcenter"
+           title="垂直平分线的交点"
+           description="作一条线段，使其连接已知角的两边，从而获得一个三条垂直平分线相交于点O的三角形。"
+           quote="知识的存在的价值在于传承。"
+           quote_author="拉尔夫·爱默生（美国思想家、文学家、诗人）">
+    </level>
+    <level id="AEqualSegments1"
+           title="三条相等的线段 - 1"
+           description="已知角ABC和其内一点M，在BA和BC上分别求点D和点E，作线段DM和ME，使BD=DM=ME。"
+           quote="所有知识都会简化为概率。"
+           quote_author="大卫·休谟（苏格兰哲学家）">
+    </level>
+    <level id="CircleTangentPL"
+           title="过定点与直线相切的圆"
+           description="作一个圆，使其经过点A，并与给定直线相切于点B。"
+           quote="知识闪亮登场，智慧却姗姗来迟。"
+           quote_author="阿尔弗雷德·丁尼生（英国诗人）">
+    </level>
+    <level id="TrapezoidCut"
+           title="梯形底边的中点"
+           description="作一条经过梯形底边中点的直线。"
+           quote="是否有一位神，他本身就是名伟大的数学家。"
+           quote_author="保罗·狄拉克（英国理论物理学家）">
+    </level>
+    <level id="Angle45"
+           title="45°角"
+           description="以给定射线为一边，作一个45°角。"
+           quote="如果谁不知道正方形的对角线不能与其边长通约的事实，那他就不配拥有人的称呼。"
+           quote_author="柏拉图（古希腊哲学家、数学家）">
+    </level>
+    <level id="Lozenge"
+           title="菱形"
+           description="以给定线段为一边，作一个顶角为45°的菱形。"
+           quote="思考要深入浅出。"
+           quote_author="阿诺德·罗斯（美国数学家）">
+    </level>
+    <level id="CDoubleSeg"
+           title="二倍线段"
+           description="仅使用圆规在直线AB上求作点C，使得|AC|=2|AB|。"
+           quote="数学事实本身既不简单，也不复杂，事实就是事实。"
+           quote_author="埃米尔·勒穆瓦纳（法国数学家、土木工程师）">
+    </level>
+    <level id="Angle60Drop"
+           title="60°角 - 2"
+           description="过给定点作一条直线，使其与已知直线的夹角为60°角。"
+           quote="着手处理任何难题的最佳切入角度就是“try-angle”。"
+           quote_author="佚名">
+    </level>
+    <level id="EquilateralAboutCircle"
+           title="外切等边三角形"
+           description="以给定点作为切点之一，作一个等边三角形，使其与圆外切。"
+           quote="逻辑就是思想的解剖学。"
+           quote_author="约翰·洛克（英国哲学家）">
+    </level>
+    <level id="EquilateralInCircle"
+           title="圆的内接等边三角形"
+           description="圆心未知，以给定点为顶点，在圆中作一个内接等边三角形。"
+           quote="并非是我们选择了数学作为职业，而是它选择了我们。"
+           quote_author="尤里·曼宁（俄国数学家）">
+    </level>
+    <level id="Cut2Rectangles"
+           title="分割两矩形"
+           description="作一条直线，将每个矩形分割成面积相等的两部分。"
+           quote="数学是最可靠的预言。"
+           quote_author="威廉·施韦贝尔（德国数学家）">
+    </level>
+    <level id="Sqrt2"
+           title="2的平方根"
+           description="假设|AB|=1。在射线AB上求作点C，使AC的长度等于√2。"
+           quote="√2也被称为毕达哥拉斯常数。"
+           quote_author="维基百科">
+    </level>
+    <level id="Sqrt3"
+           title="3的平方根"
+           description="假设|AB|=1。在射线AB上求作点C，使AC的长度等于√3。"
+           quote="√3也被称为西奥多勒斯常数。"
+           quote_author="维基百科">
+    </level>
+    <level id="Angle15"
+           title="15°角"
+           description="以给定射线为一条边，作一个15°角。"
+           quote="如果某一天我们无所不知，那也是因为使用了数学。"
+           quote_author="皮埃尔·伽桑狄（法国哲学家、数学家）">
+    </level>
+    <level id="SquareByOppMidpoints"
+           title="由对边中点作正方形"
+           description="已给定两条对边的中点，作一个正方形。"
+           quote="要在数学中有所成就的首要条件应是精确无误；次要条件则是尽量简明。"
+           quote_author="拉扎尔·卡诺（法国数学家、政治家、工程师）">
+    </level>
+    <level id="SquareByAdjMidpoints"
+           title="由邻边中点作正方形"
+           description="已给定两条邻边的中点，作一个正方形。"
+           quote="思考是迄今为止最艰难的工作，这大概就是很少人愿意投身其中的原因。"
+           quote_author="亨利·福特（美国汽车工程师、企业家）">
+    </level>
+    <level id="Parallel"
+           title="平行线"
+           description="过给定点作一条与已知直线平行的直线。"
+           quote="只有无知才会让人去试图证明公理。"
+           quote_author="亚里士多德（古希腊哲学家、数学家）">
+    </level>
+    <level id="Parallelogram3V"
+           title="由三个顶点作平行四边形"
+           description="已给定四个顶点中的三个，作一个平行四边形。"
+           quote="逻辑是无敌的，因为若想要战胜逻辑，你还是得使用逻辑。"
+           quote_author="皮埃尔·布特鲁（法国数学家）">
+    </level>
+    <level id="LineAlongPoints"
+           title="两点的等距线 - 1"
+           description="过点C作一条直线，使其与点A和点B的距离相等，但不通过点A和点B之间。"
+           quote="数学是理性的工具。"
+           quote_author="理查德·费曼（美国物理学家）">
+    </level>
+    <level id="LineBetweenPoints"
+           title="两点的等距线 - 2"
+           description="过点C作一条直线，使其通过点A和点B之间，且与点A和点B的距离相等。"
+           quote="数学是一种能完美自洽的科学。"
+           quote_author="卡尔·雅可比（德国数学家）">
+    </level>
+    <level id="TrapezoidMedian"
+           title="梯形底边的算术平均"
+           description="作一条平行于梯形底边的线段，使其长度等于两条底边的算术平均。"
+           quote="数学是上帝用来书写宇宙的语言。"
+           quote_author="伽俐略·伽利莱（意大利数学家、物理学家）">
+    </level>
+    <level id="Hash"
+           title="井号"
+           description="过给定点作一条直线，使其被已知的两对平行线所截的线段相等。"
+           quote="没有任何学科像数学一样令我们坚信人类智慧的力量。"
+           quote_author="雨果·斯廷豪斯（波兰数学家）">
+    </level>
+    <level id="ShiftAngle"
+           title="平移角"
+           description="以给定的顶点作一个角，使其与已知角相等且两边与已知角的两边平行。"
+           quote="几何即人生。"
+           quote_author="奥斯卡·扎里斯基（犹太裔美国数学家）">
+    </level>
+    <level id="SquareAboutCircle"
+           title="外切正方形"
+           description="作一个给定圆的外切正方形。其中两边应平行于给定直线。"
+           quote="别指望一个圆形的人一上来就恰好能适配方形的孔。他必须花时间先雕琢自己。"
+           quote_author="马克·吐温（美国作家）">
+    </level>
+    <level id="SquareInSquare"
+           title="正方形的内接正方形"
+           description="在正方形中作一个以给定点为顶点的内接正方形。"
+           quote="要学会游泳你得先入水，要做解题高手你得先做题。"
+           quote_author="乔治·波利亚（美国数学家）">
+    </level>
+    <level id="HexagonBySide"
+           title="正六边形"
+           description="以给定线段为一条边，作一个正六边形。"
+           quote="我要是早知道这个定理就好了！这样我就能很容易找到证明啦。"
+           quote_author="波恩哈德·黎曼（德国数学家）">
+    </level>
+    <level id="PtSymmetry"
+           title="中心对称"
+           description="作关于给定点对称的线段。"
+           quote="对称是人类从古至今试图理解和创造秩序、美丽及完美的法则。"
+           quote_author="赫尔曼·威尔（德国数学家）">
+    </level>
+    <level id="MirrorSeg"
+           title="轴对称"
+           description="作关于给定直线对称的线段。"
+           quote="向对称的惊鸿一瞥，让任何差异失去了存在的理由。"
+           quote_author="布莱士·帕斯卡（法国哲学家、数学家，概率论奠基人）">
+    </level>
+    <level id="ShiftSegment"
+           title="复制线段"
+           description="以给定一点为端点，作一条与已知线段长度相等的线段，且两条线段共线。"
+           quote="我要让不是数学家的人看不懂我作品的原理。"
+           quote_author="莱奥纳多·达·芬奇（意大利科学家、艺术家）">
+    </level>
+    <level id="GivenAngleBisector"
+           title="给定的角平分线"
+           description="分别过两个定点作两条直线，所作直线构成的角被给定直线平分。"
+           quote="我要为钻研而生存，而不是为生存而钻研。"
+           quote_author="弗朗西斯·培根（英国哲学家）">
+    </level>
+    <level id="CircleByRadius"
+           title="圆规"
+           description="以给定点为圆心，作一个半径和已知线段长度相等的圆。"
+           quote="圆是一切奇迹之源，这一点也不奇怪。"
+           quote_author="亚里士多德（古希腊哲学家、数学家）">
+    </level>
+    <level id="TranslateSegment"
+           title="平移线段"
+           description="以给定点为端点，作一条与已知线段平行且相等的线段。"
+           quote="数学是一种按照特定规则在纸上作着各种无意义标记的游戏。"
+           quote_author="大卫·希尔伯特（德国数学家）">
+    </level>
+    <level id="TriangleBySides"
+           title="由三条边作三角形"
+           description="以AB为一边，作一个三角形，使其另外两边分别与两给定线段长度相等。"
+           quote="任何一种几何学并不显得比其他的更正确，它只能是更方便。"
+           quote_author="昂立·庞加莱（法国数学家）">
+    </level>
+    <level id="HypotenuseAndLeg"
+           title="斜边和直角边"
+           description="给定斜边AB，作一个直角三角形，使一条直角边的长度与已知线段相等。"
+           quote="让数学对学生和外行来说更有意思的最好办法就是寓教于乐。"
+           quote_author="马丁·加德纳（美国科普作家）">
+    </level>
+    <level id="ParallelogramBySP"
+           title="平行四边形"
+           description="由给定边和对边的中点，作一个平行四边形。"
+           quote="数学的主题太严肃了，所有人都不应错过任何让它变得有意思起来的机会。"
+           quote_author="布莱士·帕斯卡（法国哲学家、数学家，概率论奠基人）">
+    </level>
+    <level id="SumSquares"
+           title="正方形的面积和"
+           description="作一个正方形，使其面积等于两个已知正方形的面积和，且三个正方形有一个公共角。"
+           quote="整体胜于部分之和。"
+           quote_author="亚里士多德（古希腊哲学家、数学家）">
+    </level>
+    <level id="Annulus"
+           title="环形"
+           description="作一个给定圆的同心圆，使其将给定圆分成2个面积相等的部分。"
+           quote="我们必须知道，我们必将知道！"
+           quote_author="大卫·希尔伯特（德国数学家）">
+    </level>
+    <level id="Angle75"
+           title="75°角"
+           description="以给定射线为一边，作一个75°角。"
+           quote="人类的头脑首先必须独立地构思形式，然后我们才能在事物中找到形式。"
+           quote_author="阿尔伯特·爱因斯坦（德国物理学家）">
+    </level>
+    <level id="Equidistant3"
+           title="三点的等距线"
+           description="作一条到给定三个点距离相等的直线。"
+           quote="数学是思想的体操。"
+           quote_author="亚历山大·苏沃洛夫（俄国军事家）">
+    </level>
+    <level id="Heron"
+           title="海伦问题"
+           description="作点C以及线段AC和BC，使它们的长度之和最小。"
+           quote="生活因两件事而美好：发现数学与教授数学。"
+           quote_author="西莫恩·泊松（法国数学家、物理学家）">
+    </level>
+    <level id="Circle3"
+           title="外接圆"
+           description="作给定三角形的外接圆。"
+           quote="我几乎就此要发表第三假设（三角形内角和小于180°）在假想球面上也同样成立的提议了。"
+           quote_author="约翰·兰伯特（德国数学家）">
+    </level>
+    <level id="CircleInTriangle"
+           title="内切圆"
+           description="作给定三角形的内切圆。"
+           quote="钻研化圆为方和倍立方体只会让人无功而返。"
+           quote_author="马修·普莱尔（英国诗人）">
+    </level>
+    <level id="AngleMidpoint"
+           title="由中点构造线段"
+           description="作一条端点分别在给定角两边上的线段，并且使给定点为其中点。"
+           quote="不用担忧你在数学上碰到的难处：我保证我碰到的肯定比你更多。"
+           quote_author="阿尔伯特·爱因斯坦（德国物理学家）">
+    </level>
+    <level id="AngleIsosceles"
+           title="等腰三角形的顶角"
+           description="过给定点作一条直线，使其在角的两边上截的线段长度相等。"
+           quote="有两种方法可以学好数学。第一种是比其他人都聪明。第二种是虽比其他人都笨，但锲而不舍。"
+           quote_author="拉乌尔·伯特（匈牙利数学家）">
+    </level>
+    <level id="AngleTrisection54"
+           title="三等分54°角"
+           description="作两条射线，将给定的54°角分为三个相等的部分。"
+           quote="如果我不快乐，我会钻研数学令自己快乐起来。如果我快乐，我会钻研数学让自己一直快乐下去。"
+           quote_author="阿尔弗雷德·瑞尼（匈牙利数学家）">
+    </level>
+    <level id="Excircle"
+           title="旁切圆"
+           description="作由三条给定直线组成的三角形的旁切圆。"
+           quote="从现实的房子走向数学的森林相对容易，但很少有人知道怎么走回头路。"
+           quote_author="雨果·斯廷豪斯（波兰数学家）">
+    </level>
+    <level id="PerimeterBisector"
+           title="周长平分线"
+           description="经过三角形的顶点作一条直线，使其周长被平分成相等的两部分。"
+           quote="有人成了诗人，那是因为他缺乏成为数学家的想象力。"
+           quote_author="大卫·希尔伯特（德国数学家）">
+    </level>
+    <level id="AMinPerimeter"
+           title="最小周长 - 1"
+           description="作一个三角形，使周长尽可能最短，其中两个顶点位于已知角的两边上且第三个顶点是点A。"
+           quote="几何是凝固的音乐。"
+           quote_author="约翰·歌德（德国思想家、作家、科学家）">
+    </level>
+    <level id="3rdProportional"
+           title="第三比例项"
+           description="在射线上求作点D，使线段AD为已知线段的第三比例项。"
+           quote="我们周围的一切都是几何学。"
+           quote_author="勒·柯布西耶（瑞士建筑大师）">
+    </level>
+    <level id="TrapezoidHarmMean"
+           title="梯形底边的调和平均"
+           description="作一条平行于梯形底边的线段，其长度等于两条底边的调和平均。"
+           quote="数学与其说是知识，不如说是技巧。"
+           quote_author="菲利普·戴维斯（美国数学家）">
+    </level>
+    <level id="LDropPerp"
+           title="过线外一点作垂线*"
+           description="仅使用直尺，从给定点向一条经过圆心的直线引一条垂线。"
+           quote="光有个好脑袋是不够的。更主要的是好好使用它。"
+           quote_author="勒奈·笛卡尔（法国哲学家、数学家）">
+    </level>
+    <level id="LMidpoint"
+           title="中点*"
+           description="仅使用直尺作给定线段的中点。提供一条与该线段平行的直线作为辅助。"
+           quote="凡事都应该尽量简化，但绝不能简陋。"
+           quote_author="阿尔伯特·爱因斯坦（德国物理学家）">
+    </level>
+    <level id="InteriorAngles"
+           title="内角"
+           description="经过给定点作一条与两已知直线相交的直线，并且使两个内角相等。"
+           quote="我越发相信我们欧几里德几何的必要性是无法证明的，至少不能为了人类的原因而用人类的理性去证明。"
+           quote_author="卡尔·弗雷德里希·高斯（德国数学家、天文学家、物理学家）">
+    </level>
+    <level id="OctagonBySide"
+           title="正八边形"
+           description="以给定线段为一边，作一个正八边形。"
+           quote="数学的本质在于它的自由。"
+           quote_author="格奥尔格·康托（德国数学家）">
+    </level>
+    <level id="TrapezoidCut3"
+           title="由梯形对角线三等分"
+           description="作一条线段，使其与梯形底边平行，且被梯形的对角线截成三个相等的部分。"
+           quote="要说服一个高中生他以后将会遇到比代数和几何还困难的问题，确实是挺难的。"
+           quote_author="埃德加·艾森·豪（美国小说家）">
+    </level>
+    <level id="OrthicTriangle"
+           title="最小周长 - 2"
+           description="在已知三角形中作一个内接三角形，使其周长尽可能最短。"
+           quote="教育的根是苦涩的，但结出的果却是甜蜜的。"
+           quote_author="亚里士多德（古希腊哲学家、数学家）">
+    </level>
+    <level id="HarmonicMean"
+           title="线段的调和平均"
+           description="在给定射线上作一个点，截得一条线段，其长度等于两条相邻线段的调和平均。"
+           quote="几何学是关于不朽的知识。"
+           quote_author="毕达哥拉斯（古希腊哲学家、数学家）">
+    </level>
+    <level id="ATrByCentroid"
+           title="由角和重心构造三角形"
+           description="作一条线段，使其连接已知角的两边，并获得一个重心为点O的三角形。"
+           quote="我思故我在。"
+           quote_author="勒奈·笛卡尔（法国哲学家、数学家）">
+    </level>
+    <level id="Tangent"
+           title="圆的切线"
+           description="由圆外一点作圆的一条切线。"
+           quote="没有什么比看到创意的源泉更重要，这在我看来这比创意本身更有趣。"
+           quote_author="戈特弗莱德·莱布尼茨（德国数学家）">
+    </level>
+    <level id="OuterTangent"
+           title="外公切线"
+           description="作两个圆的外公切线。"
+           quote="能从极少的原理出发，无中生有，成果繁硕，是几何学的荣耀。"
+           quote_author="艾萨克·牛顿（英国物理学家、数学家）">
+    </level>
+    <level id="InnerTangent"
+           title="内公切线"
+           description="作两个圆的内公切线。"
+           quote="想象力要比知识本身更重要。"
+           quote_author="阿尔伯特·爱因斯坦（德国物理学家）">
+    </level>
+    <level id="90RotationCCW"
+           title="旋转90°"
+           description="以给定点为中心，将线段逆时针旋转90°。"
+           quote="想象力决定一切。"
+           quote_author="布莱士·帕斯卡（法国哲学家、数学家、概率论奠基人）">
+    </level>
+    <level id="60RotationCW"
+           title="旋转60°"
+           description="以给定点为中心，将线段顺时针旋转60°。"
+           quote="科学是简单常识的精华。"
+           quote_author="托马斯·赫胥黎（英国博物学家）">
+    </level>
+    <level id="Divide3"
+           title="三等分线段"
+           description="求作两点，将线段分成3个相等部分。"
+           quote="工作三大准则：繁中求简，乱中求序，难中求胜。"
+           quote_author="阿尔伯特·爱因斯坦（德国物理学家）">
+    </level>
+    <level id="LDivide3"
+           title="三等分线段*"
+           description="仅使用直尺，作出两点将线段平分为长度相等的三段。提供一条与该线段平行的直线作为辅助。"
+           quote="美是首要的标准：世上没有留给丑陋数学的永久容身之地。"
+           quote_author="高德菲·哈代（英国数学家）">
+    </level>
+    <level id="Chord3"
+           title="三等分弦"
+           description="过给定点作大圆的一条弦，使其被小圆分成三条相等的线段。"
+           quote="数学是通往科学的入口和钥匙。"
+           quote_author="罗吉尔·培根（英国思想家、科学家）">
+    </level>
+    <level id="Segment6"
+           title="1:5的比例"
+           description="求作一点，使其以1:5的比例分割给定线段。"
+           quote="在数学中，提问的艺术，其价值肯定比解题能力要来得更高。"
+           quote_author="格奥尔格·康托（德国数学家）">
+    </level>
+    <level id="3CirclesC"
+           title="三个圆 - 1"
+           description="分别以给定三点为圆心，作三个彼此外切的圆。"
+           quote="知识就是力量。"
+           quote_author="弗朗西斯·培根（英国哲学家）">
+    </level>
+    <level id="Secant2"
+           title="二等分割线"
+           description="过圆外一点作一条割线，使其被该点和给定圆截成两条相等的线段。"
+           quote="知识是光，愚昧是暗。"
+           quote_author="谚语">
+    </level>
+    <level id="3CirclesI"
+           title="三个圆 - 2"
+           description="作三个圆，使它们在给定点处彼此相切。"
+           quote="教育是人生旅途最好的必备品。"
+           quote_author="亚里士多德（古希腊哲学家、数学家）">
+    </level>
+    <level id="4thProportional"
+           title="第四比例项"
+           description="在射线OC上求作点D，使线段OD为已知线段的第四比例项。"
+           quote="数学所关注的只是关系的枚举和比较。"
+           quote_author="弗莱德里希·高斯（德国数学家）">
+    </level>
+    <level id="GeometricMean"
+           title="线段的几何平均"
+           description="在给定射线上求作一个点，截得一条线段，使其长度等于两条相邻线段的几何平均。"
+           quote="数学是物理的一部分，但在这儿做实验要便宜得多。"
+           quote_author="弗拉基米尔·阿诺德（俄国数学家）">
+    </level>
+    <level id="GoldenSection"
+           title="黄金分割"
+           description="求作一点，使其“黄金分割”给定线段。"
+           quote="在数学史中没有任何别的数像黄金分割比那样启发了那么多学科的思想者们。"
+           quote_author="马里奥·利维奥（美国天文学界）">
+    </level>
+    <level id="Angle54"
+           title="54°角"
+           description="以给定射线为一边，作一个54°角。"
+           quote="科学家不是提供正确答案的人，而是提出正确问题的人。"
+           quote_author="克劳德·列维－施特劳斯（法国哲学家、人类学家）">
+    </level>
+    <level id="L3Parallel"
+           title="第三条平行线"
+           description="仅使用直尺，过给定点作一条直线，使其与两条已知平行线平行。"
+           quote="灵魂中没有诗意的人是没法成为一名数学家的。"
+           quote_author="索非娅·科瓦列夫斯卡娅（俄国女性数学家）">
+    </level>
+    <level id="CircleInAngle"
+           title="角的内切圆"
+           description="作一个过给定点的圆，使其与已知角的两条边相切。"
+           quote="数学科学将秩序的对称和极限具象化展示出来，这些正是美的最佳形式。"
+           quote_author="亚里士多德（古希腊哲学家、数学家）">
+    </level>
+    <level id="TrapezoidGeomMean"
+           title="梯形底边的几何平均"
+           description="作一条平行于梯形底边的线段，使其长度等于两条底边的几何平均。"
+           quote="数学是赋予理性的语言，是增添了逻辑的表达方式。"
+           quote_author="理查德·费曼（美国物理学家）">
+    </level>
+    <level id="Pentagon"
+           title="正五边形"
+           description="作一个内接于圆的正五边形，其中一个顶点已给出。"
+           quote="几何本已足够强大，若结合艺术，则更是如虎添翼，令人不可抗拒。"
+           quote_author="欧里庇得斯（古希腊悲剧诗人）">
+    </level>
+    <level id="Angle3"
+           title="3°角"
+           description="以给定射线为一边，作一个3°角。"
+           quote="如同其他学科一样，数学升华于人类自身的需求：始于丈量土地和测量容积，始于计量时间，始于机械力学。"
+           quote_author="弗莱德里希·恩格斯（德国哲学家）">
+    </level>
+    <level id="TriangleByMidpoints"
+           title="由各边中点构造三角形"
+           description="给定各边中点，作一个三角形。"
+           quote="“显然”是数学中最危险的词汇。"
+           quote_author="埃里克·贝尔（苏格兰数学家）">
+    </level>
+    <level id="TrBySideAndCentroid"
+           title="由一边和重心构造三角形"
+           description="给定一边和重心，作一个三角形。"
+           quote="毕竟世界上可以施展你才华的人只有你自己，多了不起的责任啊。"
+           quote_author="西格·金克拉（美国作家）">
+    </level>
+    <level id="TrByAltitudeBases"
+           title="由高的垂足构造三角形"
+           description="给定三条高的垂足，作一个三角形。"
+           quote="一个人很快会意识到简洁和几何学是通用和不朽的语言。"
+           quote_author="保罗·兰德（美国平面设计师）">
+    </level>
+    <level id="TrByIncircleBases"
+           title="由切点构造三角形"
+           description="给定内切圆的三个切点，作一个三角形。"
+           quote="音乐是声音的算术，而光学是光的几何。"
+           quote_author="克劳德·德彪西（法国音乐家）">
+    </level>
+    <level id="TrByExcircleCenters"
+           title="由旁心构造三角形"
+           description="给定三个旁心，作一个三角形。"
+           quote="几何学没有派系。"
+           quote_author="伏尔泰（法国启蒙思想家、哲学家、作家、历史学家）">
+    </level>
+    <level id="RTrBy2SidePoints"
+           title="由直角边上的两点构造直角三角形"
+           description="在圆中作一个内接直角三角形，使两个给定点分别位于两条直角边上。圆心位于点O。"
+           quote="美即几何。"
+           quote_author="J·K·罗琳（英国作家）">
+    </level>
+    <level id="CircleTangentCL"
+           title="直线和圆的公切圆"
+           description="作一个圆，使其在给定点与直线相切，并与已知圆相切。"
+           quote="数学保持严密性的目的是在直觉的战利品中去伪存真。"
+           quote_author="雅克·阿达马（法国数学家）">
+    </level>
+    <level id="Equilateral3"
+           title="等边三角形 - 2"
+           description="作一个等边三角形，使其一个顶点是给定点，且另两个顶点位于两条平行线上。"
+           quote="令我有兴趣使用数学的唯一因素，是因为这样我能自娱自乐并娱乐他人。"
+           quote_author="保罗·洛克哈特（美国宇航员）">
+    </level>
+    <level id="SquareInTriangle"
+           title="三角形的内接正方形"
+           description="在锐角三角形ABC中作一个内接正方形，使其一条边位于AC上。"
+           quote="生活的路线是责任与欲望之间的一条不规则的对角线。"
+           quote_author="威廉·阿尔格（美国作家）">
+    </level>
+    <level id="Equidistant2"
+           title="与定点和角的边等距的点"
+           description="已知角ABC和其内一点M，在BA和BC上分别找到点D和E，作长度相等的线段MD和DE，且DE垂直于BC。"
+           quote="你没法批评几何学，因为它从不出错。"
+           quote_author="保罗·兰德（美国平面设计师）">
+    </level>
+    <level id="CircleTangentCC"
+           title="两圆的公切圆"
+           description="作一个圆，使其与两个已知圆相切，并与其中一个圆切于给定点。"
+           quote="在“实在”和“虚无”之间总有个不同点，但这是纯几何意义上的本质不同，除去几何以外再无他物。"
+           quote_author="马丁·加德纳（美国科普作家）">
+    </level>
+    <level id="CircleTangentPPL"
+           title="过两点且与直线相切的圆"
+           description="作一个过给定两点的圆，使其与给定直线相切。"
+           quote="数学领域中即使再小的错误也不能被忽略。"
+           quote_author="艾萨克·牛顿（英国物理学家、数学家）">
+    </level>
+    <level id="RTrByHypAndTangentPt"
+           title="由斜边上的切点构造三角形"
+           description="由给定的斜边及其与内切圆的切点，作一个直角三角形。"
+           quote="既然我们无法了解有关任何东西的所有事，我们就尽量去了解有关所有东西的些许事吧。"
+           quote_author="布莱士·帕斯卡（法国哲学家、数学家、概率论奠基人）">
+    </level>
+    <level id="CMidpoint"
+           title="中点*"
+           description="仅使用圆规，求作给定两点的中点。"
+           quote="别碰我的圆！"
+           quote_author="阿基米德（古希腊数学家、物理学家、发明家）">
+    </level>
+    <level id="CTranslateCircle"
+           title="复制圆"
+           description="给定圆心，作一个与已知圆半径相等的圆。"
+           quote="自亚里士多德以来逻辑学竟没有增添任何新知。"
+           quote_author="库尔特·哥德尔（美籍逻辑学家）">
+    </level>
+    <level id="CIntersectCL"
+           title="直线与圆的交点"
+           description="仅使用圆规，求作过两个给定点的直线与已知圆的交点。"
+           quote="一名数学家，就像画家或诗人，是风格的创造者。如果他的风格比其他人流传更长久，那是因为它们是用思想锤炼出来的。"
+           quote_author="高德菲·哈罗德·哈代（英国数学家）">
+    </level>
+    <level id="EqualSegments3"
+           title="三条相等的线段"
+           description="作两端点分别位于给定角两边上的线段，使得三条标记的线段相等。"
+           quote="不明缘由，就不知真相。"
+           quote_author="亚里士多德（古希腊哲学家、数学家）">
+    </level>
+    <level id="LTangent"
+           title="圆的切线*"
+           description="圆心未知，仅使用直尺作圆外给定点到圆的一条切线。"
+           quote="射影几何即一切几何。"
+           quote_author="阿瑟·凯利（英国数学家）">
+    </level>
+    <level id="Napoleon"
+           title="拿破仑问题"
+           description="仅使用圆规，求作给定圆的圆心。"
+           quote="数学的发展与完善是与国家的繁荣昌盛息息相关的。"
+           quote_author="拿破仑·波拿巴（法国军事家、政治家）">
+    </level>
+    <level id="LDropPerp2"
+           title="过线外一点作垂线**"
+           description="仅使用直尺，从圆心向给定直线引一条垂线。"
+           quote="唯一获取关于我们想象力的真相的途径就是使用我们的想象力，而那的确是艰难的工作。"
+           quote_author="保罗·洛克哈特（美国宇航员）">
+    </level>
+    <level id="CIntersectX"
+           title="直线与圆的交点*"
+           description="仅使用圆规，求作过圆心与给定点的直线与已知圆的交点。"
+           quote="在充分理解一个陈述的意思之前，先别急着问它是真是假。"
+           quote_author="艾利·毕晓普（美国数学家）">
+    </level>
+    <level id="CircleTangentCPwCenterL"
+           title="圆心在直线上的圆"
+           description="作圆心在给定直线上的圆，使其过给定点并与给定圆相切。"
+           quote="思想是待点燃的火苗，而不是待填满的容器。"
+           quote_author="普鲁塔克（希腊历史学家）">
+    </level>
+</levels>
