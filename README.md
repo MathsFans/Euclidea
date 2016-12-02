@@ -10,3 +10,7 @@
 请访问网页版:
 - [美化版本链接(解答更新中)](https://mathsfans.github.io/Euclidea/)  
 - [v1版本链接(全最优解更新完成)](https://mathsfans.github.io/Euclidea/v1/)  
+
+重要解法更新：
+- (2016-12-02) 7.3 3L新纪录解法  
+- (2016-12-02) v1版本解法更正，文字描述更新  
