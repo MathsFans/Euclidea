@@ -14,6 +14,7 @@
 - [v1版本链接(全最优解更新完成)](https://mathsfans.github.io/Euclidea/v1/)  
 
 重要解法更新：
+- (2018-01-11) 14.8 7E新纪录解法。 
 - (2017-11-30) 13.2 7E新纪录解法。 
 - (2017-10-04) 按照iOS 3.37版重新排列题目顺序。 
 - (2017-07-10) 2.8 5E新纪录解法。 
@@ -40,6 +41,7 @@ The solution pages:
 - [v1 (all optimal solutions, although descriptions are in Chinese)](https://mathsfans.github.io/Euclidea/v1/)  
 
 Version history：
+- (2018-01-11) New record update: 14.8 7E. 
 - (2017-11-30) New record update: 13.2 7E. 
 - (2017-10-04) Reorder v1 all problems according to iOS v3.37. 
 - (2017-07-10) New record update: 2.8 5E. 
