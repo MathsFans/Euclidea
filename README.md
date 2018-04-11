@@ -13,7 +13,8 @@
 - [美化版本链接(解答更新中)](https://mathsfans.github.io/Euclidea/)  
 - [v1版本链接(全最优解更新完成)](https://mathsfans.github.io/Euclidea/v1/)  
 
-重要解法更新：
+重要解法更新(v1版本)：
+- (2018-04-11) 根据iOS 4.07版增加8个新问题并重排题目顺序，更新最优解法(包含6.10 4E和8.6 4L、5E解法)。 
 - (2018-01-27) 14.4 6L新纪录解法。 
 - (2018-01-11) 14.8 7E新纪录解法。 
 - (2017-11-30) 13.2 7E新纪录解法。 
@@ -39,9 +40,10 @@ This repo is mainly maintained by
 
 The solution pages:
 - [v2 (better UI, solutions updating...)](https://mathsfans.github.io/Euclidea/)  
-- [v1 (all optimal solutions, although descriptions are in Chinese)](https://mathsfans.github.io/Euclidea/v1/)  
+- [v1 (all optimal solutions, descriptions in Chinese)](https://mathsfans.github.io/Euclidea/v1/)  
 
-Version history：
+Version history (v1 version)：
+- (2018-04-11) Add 8 new problems and re-order all problems according to iOS v4.07, with updated optimal solutions (including 6.10 4E, 8.6 4L and 5E). 
 - (2018-01-27) New record update: 14.4 6L. 
 - (2018-01-11) New record update: 14.8 7E. 
 - (2017-11-30) New record update: 13.2 7E. 
