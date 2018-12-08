@@ -45,7 +45,7 @@ The solution pages:
 - [v1 (all optimal solutions, descriptions in Chinese)](https://mathsfans.github.io/Euclidea/v1/)  
 
 Version history (v1 version)：
-- (2018-04-11) Add 8 new problems and re-order all problems according to iOS v4.12, with updated optimal solutions (including all new problems and 6.11 10E). 
+- (2018-12-08) Add 8 new problems and re-order all problems according to iOS v4.12, with updated optimal solutions (including all new problems and 6.11 10E). 
 - (2018-04-18) New record update: 3.10 7E. 
 - (2018-04-11) Add 8 new problems and re-order all problems according to iOS v4.07, with updated optimal solutions (including 6.10 4E, 8.6 4L and 5E). 
 - (2018-01-27) New record update: 14.4 6L. 
