@@ -1,10 +1,10 @@
 {
-  "name": "f2e-interview",
-  "version": "0.1.0",
-  "description": "This is a Q&A bank to interview front-end engineer for CRDCHZ.",
+  "name": "Euclidea Solutions",
+  "version": "0.1.1",
+  "description": "This is a game solutions page of Euclidea(app), maintained by Math Fans org.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/crdchz/F2E-Interview"
+    "url": "https://github.com/MathsFans/Euclidea"
   },
   "license": "GPL",
   "devDependencies": {
