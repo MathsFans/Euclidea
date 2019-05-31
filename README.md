@@ -49,7 +49,7 @@ The solution pages:
 - [v1 (all optimal solutions, descriptions in Chinese)](https://mathsfans.github.io/Euclidea/v1/)  
 
 Version history (v1 version)：
-- (2019-05-19) New record update: 10.11 13E. 
+- (2019-06-01) New record update: 10.11 13E. 
 - (2019-05-19) New record update: 12.4 10E. 
 - (2019-03-12) New record update: 6.11 7L. 
 - (2018-12-15) New record update: 12.8 13E. 
