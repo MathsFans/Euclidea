@@ -7,7 +7,7 @@
 - [@gsdevcn](https://github.com/gsdevcn)  
 - [@negiizhao](https://github.com/negiizhao) 
 
-本Repo Q群：527621502，欢迎通过github提交issue，也欢迎加群讨论，共同进步。  
+本Repo Q群：527621502(已满)，1023834808(可用)，欢迎通过github提交issue，也欢迎加群讨论，共同进步。  
 
 请访问网页版:
 - [美化版本链接(解答更新中)](https://mathsfans.github.io/Euclidea/)  
